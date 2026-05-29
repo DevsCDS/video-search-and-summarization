@@ -55,7 +55,13 @@ from pathlib import Path
 # ---------------------------------------------------------------------------
 
 PLATFORMS: dict[str, dict] = {
-    "L40S": {"short_name": "l40s", "gpu_type": "L40S", "min_vram_per_gpu": 48, "brev_search": "L40S"},
+    # 2-GPU L40S (massedcompute_L40Sx2): the standard pool members are 2-GPU boxes.
+    # RT-Embed is a single-GPU microservice but Docker Compose will use one GPU;
+    # the second GPU is idle. gpu_count=2 must match the pool exactly — BrevEnvironment
+    # enforces strict equality so the 2-GPU fleet members (vss-eval-l40s,
+    # vss-eval-l40s-2) are selected correctly rather than falling through to
+    # the default of 1 and requiring a 1-GPU box that may not be available.
+    "L40S": {"short_name": "l40s", "gpu_type": "L40S", "gpu_count": 2, "min_vram_per_gpu": 48, "brev_search": "L40S"},
 }
 
 DEFAULT_PLATFORM = "L40S"
@@ -265,6 +271,7 @@ def generate_task(platform: str, spec: dict, output_root: Path,
         # from a bare instance, not against an existing VSS profile.
         f'platform = "{platform}"',
         f'gpu_type = "{pspec["gpu_type"]}"',
+        f'gpu_count = {pspec["gpu_count"]}',
         f'brev_search = "{pspec["brev_search"]}"',
         f'min_vram_gb_per_gpu = {pspec["min_vram_per_gpu"]}',
         f"check_count = {len(expect.get('checks') or [])}",
