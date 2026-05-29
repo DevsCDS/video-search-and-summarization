@@ -37,19 +37,18 @@ global:
   #
   # PREREQUISITE — the HAProxy Technologies kubernetes-ingress controller
   # must already be installed in the cluster. The IngressClass `haproxy` is
-  # a cluster-scoped resource, so VSS does NOT bundle the controller
-  # (bundling would collide with any existing HAProxy install). Recommended
-  # one-time install:
+  # a cluster-scoped resource, so VSS does NOT bundle the controller —
+  # bundling collides with any existing HAProxy install.
   #
-  #   helm repo add haproxytech https://haproxytech.github.io/helm-charts
-  #   helm install haproxy-kubernetes-ingress haproxytech/kubernetes-ingress \
-  #     --namespace haproxy-controller --create-namespace \
-  #     --set controller.service.type=ClusterIP
+  # Install command is in this profile's README ("Step 2: Install Ingress
+  # Controller (HAProxy)"). It uses DaemonSet + hostPort for external
+  # traffic AND a ClusterIP Service for in-cluster RTVI routing — the
+  # ClusterIP piece (`--set controller.service.type=ClusterIP`) is what
+  # makes `controllerService` below addressable.
   #
-  # That install produces an in-cluster Service at
-  # `haproxy-kubernetes-ingress.haproxy-controller` on port 80 — the
-  # defaults below match. If you installed under different release/namespace
-  # names, override `controllerService` and `controllerPort` to match.
+  # The defaults `haproxy-kubernetes-ingress.haproxy-controller:80` match
+  # the README's install. Override only if you used a different release
+  # name or namespace.
   rtviInternalIngress:
     enabled: false
     className: haproxy
