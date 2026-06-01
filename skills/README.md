@@ -31,6 +31,8 @@ The VSS 3.2 GA skill names replaced the pre-GA slash-command names:
 | [vss-generate-video-report](vss-generate-video-report/SKILL.md) | Skill to produce video analysis reports by querying the VSS agent's `/generate` endpoint. |
 | [vss-generate-video-report-rag](vss-generate-video-report-rag/SKILL.md) | Skill to generate video summary reports with Enterprise RAG using the VSS frag/RAG pipeline. |
 | [vss-query-analytics](vss-query-analytics/SKILL.md) | Skill for querying video analytics data and metrics from Elasticsearch via the VA-MCP server. |
+| [vss-setup-behavior-analytics](vss-setup-behavior-analytics/SKILL.md) | Skill to deploy the vss-behavior-analytics service standalone (entrypoint, config-source, optional calibration). Not for the full warehouse deploy. |
+| [vss-setup-video-analytics-api](vss-setup-video-analytics-api/SKILL.md) | Skill to deploy the vss-video-analytics-api REST service standalone (config-source, data-log bind, Elasticsearch, optional Kafka). Not for full warehouse deploy. |
 | [vss-search-archive](vss-search-archive/SKILL.md) | Skills for searching video archives using natural language, multi-embedding fusion, and VLM critique. |
 | [vss-summarize-video](vss-summarize-video/SKILL.md) | Skill for summarizing a video through chunking, dense captioning, and aggregation functions using the Long Video Summarization (LVS) microservice. |
 | [vss-ask-video](vss-ask-video/SKILL.md) | Skill for using video understanding tool to answer text questions about video content using a VLM. |
