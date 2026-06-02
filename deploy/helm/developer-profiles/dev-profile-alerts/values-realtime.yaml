@@ -71,6 +71,8 @@ rtvi:
   vss-rtvi-vlm:
     enabled: true
     useSharedNim: false
+    # Compose parity: deploy/docker/developer-profiles/dev-profile-alerts/.env RTVI_VLM_MODEL_PATH.
+    modelPath: "ngc:nim/nvidia/cosmos-reason2-8b:0303-fp8-dynamic-kv8"
     env:
       - name: OPENAI_API_KEY
         value: "NOAPIKEYSET"
