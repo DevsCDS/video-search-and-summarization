@@ -65,6 +65,7 @@ envConfigMapKeys:
   - NIM_KVCACHE_PERCENT
   - NIM_PASSTHROUGH_ARGS
   - NIM_DISABLE_MM_PREPROCESSOR_CACHE
+  - NIM_MODEL_PROFILE
 
 global:
   pullSecretName: "ngc-nim-docker-reg-secret"
