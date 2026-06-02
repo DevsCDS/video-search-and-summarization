@@ -301,22 +301,11 @@ configure_ngc_cli_in_sandbox() {
     return
   fi
   log "Installing NGC CLI inside sandbox ${NEMOCLAW_SANDBOX_NAME} (pip3 install --user ngcsdk)"
-  if ! nemoclaw sandbox exec -n "$NEMOCLAW_SANDBOX_NAME" --no-tty -- bash -c '
-    set -e
-    if command -v ngc >/dev/null 2>&1 && ngc --version >/dev/null 2>&1; then
-      echo "ngc already installed: $(ngc --version 2>&1 | head -1)"
-      exit 0
-    fi
-    python3 -m pip install --user --quiet --break-system-packages ngcsdk 2>/dev/null \
-      || python3 -m pip install --user --quiet ngcsdk
-    if [ ! -e /usr/local/bin/ngc ] && [ -e "$HOME/.local/bin/ngc" ]; then
-      sudo install -m 0755 "$HOME/.local/bin/ngc" /usr/local/bin/ngc 2>/dev/null \
-        || cp "$HOME/.local/bin/ngc" /usr/local/bin/ngc 2>/dev/null \
-        || true
-    fi
-    /usr/local/bin/ngc --version 2>/dev/null \
-      || "$HOME/.local/bin/ngc" --version
-  '; then
+  # `nemoclaw sandbox exec` takes the sandbox name positionally (no -n) and the exec gRPC
+  # rejects any argv element containing a newline/CR, so keep the remote command on one line.
+  local ngc_install_cmd
+  ngc_install_cmd='set -e; if command -v ngc >/dev/null 2>&1 && ngc --version >/dev/null 2>&1; then echo "ngc already installed: $(ngc --version 2>&1 | head -1)"; exit 0; fi; python3 -m pip install --user --quiet --break-system-packages ngcsdk 2>/dev/null || python3 -m pip install --user --quiet ngcsdk; if [ ! -e /usr/local/bin/ngc ] && [ -e "$HOME/.local/bin/ngc" ]; then sudo install -m 0755 "$HOME/.local/bin/ngc" /usr/local/bin/ngc 2>/dev/null || cp "$HOME/.local/bin/ngc" /usr/local/bin/ngc 2>/dev/null || true; fi; /usr/local/bin/ngc --version 2>/dev/null || "$HOME/.local/bin/ngc" --version'
+  if ! nemoclaw sandbox exec "$NEMOCLAW_SANDBOX_NAME" --no-tty -- sh -lc "${ngc_install_cmd}" </dev/null; then
     log "In-sandbox NGC CLI install failed; ngc registry calls inside the sandbox will not work"
   fi
 }
@@ -385,7 +374,7 @@ ensure_dashboard_forward() {
     openshell forward start --background "$port" "$NEMOCLAW_SANDBOX_NAME" </dev/null >"$forward_log" 2>&1 || true
   fi
 
-  for _attempt in $(seq 1 30); do
+  for _attempt in $(seq 1 "${NEMOCLAW_DASHBOARD_FORWARD_TIMEOUT:-60}"); do
     if forward_owned_by_sandbox "$port" "$NEMOCLAW_SANDBOX_NAME" && dashboard_forward_healthy "$port"; then
       log "Dashboard port-forward on ${port} is healthy for sandbox ${NEMOCLAW_SANDBOX_NAME}"
       return
@@ -426,9 +415,13 @@ resolve_vss_gateway_container() {
     return 0
   fi
 
-  # Match either the legacy kubectl-driver gateway (openshell-cluster-*) or the
-  # newer Docker-driver gateway (nemoclaw-openshell-*) emitted by NemoClaw >= v0.0.40.
-  docker ps --format '{{.Names}}' | awk '/^(openshell-cluster-|nemoclaw-openshell-)/{print; exit}'
+  # Match the OpenShell gateway/sandbox container across driver generations:
+  #   - legacy kubectl-driver gateway:                 openshell-cluster-*
+  #   - Docker-driver gateway (NemoClaw >= v0.0.40):   nemoclaw-openshell-*
+  #   - Docker-driver per-sandbox container (current): openshell-<sandbox>-<uuid>
+  docker ps --format '{{.Names}}' \
+    | awk -v sb="${NEMOCLAW_SANDBOX_NAME}" \
+        '/^(openshell-cluster-|nemoclaw-openshell-)/ || index($0, "openshell-" sb "-") == 1 { print; exit }'
 }
 
 apply_vss_policy() {
@@ -462,19 +455,32 @@ restart_vss_openclaw_gateway() {
   fi
 
   log "Restarting OpenClaw gateway in sandbox ${NEMOCLAW_SANDBOX_NAME}"
-  openshell sandbox exec -n "${NEMOCLAW_SANDBOX_NAME}" -- sh -lc \
-    "pkill -TERM -f '[o]penclaw-gateway' || true" </dev/null || true
-
+  # The `openshell sandbox exec` transport (served by openshell-sandbox, PID 1) can briefly
+  # drop with "failed to establish ssh transport: early eof" while the plugin install churns
+  # the sandbox. Retry the kill until the exec actually lands — otherwise pkill never runs,
+  # the gateway is never restarted, and the freshly installed plugin is never loaded. stderr
+  # is suppressed because the transient gRPC transport errors are expected during this window.
   for attempt in $(seq 1 30); do
     if openshell sandbox exec -n "${NEMOCLAW_SANDBOX_NAME}" -- sh -lc \
-        "curl -fsS http://127.0.0.1:${port}/health >/dev/null" </dev/null; then
+        "pkill -TERM -f '[o]penclaw-gateway' || true" </dev/null >/dev/null 2>&1; then
+      break
+    fi
+    if [ "$attempt" -eq 30 ]; then
+      log "WARN: could not reach sandbox ${NEMOCLAW_SANDBOX_NAME} to signal the OpenClaw gateway; it may not pick up the new plugin"
+    fi
+    sleep 1
+  done
+
+  for attempt in $(seq 1 60); do
+    if openshell sandbox exec -n "${NEMOCLAW_SANDBOX_NAME}" -- sh -lc \
+        "curl -fsS http://127.0.0.1:${port}/health >/dev/null" </dev/null >/dev/null 2>&1; then
       log "OpenClaw gateway is healthy after restart"
       return 0
     fi
     sleep 1
   done
 
-  log "WARN: OpenClaw gateway did not become healthy within 30 seconds after restart"
+  log "WARN: OpenClaw gateway did not become healthy within 60 seconds after restart"
   return 1
 }
 
@@ -533,7 +539,8 @@ install_vss_openclaw_plugin() {
   log "Installing VSS OpenClaw plugin ${tgz_name} into sandbox ${NEMOCLAW_SANDBOX_NAME} (variant=${OPENCLAW_PLUGIN_VARIANT})"
   log "Plugin install command: ${install_cmd}"
 
-  if [[ "${container_name}" == nemoclaw-openshell-* ]]; then
+  # Only the legacy kubectl-driver gateway (openshell-cluster-*) needs docker-exec + kubectl-exec.
+  if [[ "${container_name}" != openshell-cluster-* ]]; then
     log "Streaming ${tgz_name} into sandbox ${NEMOCLAW_SANDBOX_NAME}:${remote_tgz}"
     printf -v shell_cmd 'cat > %q' "${remote_tgz}"
     if ! openshell sandbox exec -n "${NEMOCLAW_SANDBOX_NAME}" -- sh -c "${shell_cmd}" < "${tgz_path}"; then
