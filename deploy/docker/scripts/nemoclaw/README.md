@@ -85,7 +85,7 @@ NEMOCLAW_PROVIDER=custom \
 
 ```bash
 nohup env NEMOCLAW_PROVIDER=build NVIDIA_API_KEY="$NVIDIA_API_KEY" \
-  bash /home/ubuntu/video-search-and-summarization/deploy/docker/scripts/nemoclaw/init_nemoclaw.sh \
+  bash ~/video-search-and-summarization/deploy/docker/scripts/nemoclaw/init_nemoclaw.sh \
   > /tmp/nemoclaw_install.log 2>&1 &
 ```
 
@@ -130,7 +130,7 @@ Successful runs usually include log lines like:
 [init_nemoclaw] Finished installing/onboarding NemoClaw
 [init_nemoclaw] Applying custom policy file /home/ubuntu/video-search-and-summarization/assets/vss_nemoclaw_policy.yaml to sandbox demo
 [init_nemoclaw] VSS skills installed
-[init_nemoclaw] Updating OpenClaw config for sandbox demo using script /home/ubuntu/video-search-and-summarization/deploy/docker/scripts/nemoclaw/update_openclaw_config.py
+[init_nemoclaw] Updating OpenClaw config for sandbox demo using script ~/video-search-and-summarization/deploy/docker/scripts/nemoclaw/update_openclaw_config.py
 OpenClaw UI at https://18789-<brev-id>.brevlab.com/#token=<token>
 ```
 
