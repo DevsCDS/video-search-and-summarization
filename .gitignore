@@ -18,3 +18,4 @@ deploy/docker/resolved.yml
 *.log
 *checkpoint.*
 .orchestrator-artifacts/*
+.mdx_data/*
