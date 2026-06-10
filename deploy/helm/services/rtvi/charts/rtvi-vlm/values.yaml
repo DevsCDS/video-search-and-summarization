@@ -96,7 +96,7 @@ env:
   - name: NVIDIA_VISIBLE_DEVICES
     value: "all"
   - name: VLM_MODEL_TO_USE
-    value: "openai-compat"
+    value: "cosmos-reason3"
   - name: KAFKA_ENABLED
     value: "true"
   # Match Compose: docker-compose-out-alert-realtime.yaml (mdx-vlm, mdx-vlm-incidents)
