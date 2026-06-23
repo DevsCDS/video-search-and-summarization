@@ -468,6 +468,10 @@ rtvi:
     useSharedNim: false
     modelPath: "ngc:nim/nvidia/cosmos-reason2-8b:hf-1208"
     sharedNimPort: "8000"
+    # Docker parity: dev-profile-lvs/.env pins RTVI_VLM_IMAGE_TAG="3.2.1"
+    # (other dev-profiles still pin "3.2.0", which the rtvi-vlm subchart default carries).
+    image:
+      tag: "3.2.1"
     # Wait for the LVS Kafka broker and RTVI topics created by infra.kafka.topicJob.
     waitForKafka:
       enabled: true
