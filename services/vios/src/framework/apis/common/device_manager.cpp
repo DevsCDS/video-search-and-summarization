@@ -1796,7 +1796,7 @@ void Resolution::operator=(const string& value)
     }
 }
 
-bool Resolution::operator==(const Resolution& res)
+bool Resolution::operator==(const Resolution& res) const
 {
     if (res.width.empty() || res.height.empty())
     {
