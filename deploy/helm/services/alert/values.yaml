@@ -36,6 +36,18 @@ vstBaseUrl: ""
 externalIp: ""
 internalIp: ""
 
+# Realtime VLM endpoint (env: RTVI_VLM_BASE_URL). Consumed by
+# services/alert/realtime/services/realtime_service.py. Leave "" to
+# default to in-cluster http://<release>-vss-rtvi-vlm:8000 (override
+# rtviVlmServiceName to change the in-cluster target service name).
+rtviVlmBaseUrl: ""
+rtviVlmServiceName: "vss-rtvi-vlm"
+
+# VST internal URL (env: VST_INTERNAL_URL). Compose parity with
+# deploy/docker/services/alert/compose.yml. Defaults to the in-cluster
+# vios-ingress service when "".
+vstInternalUrl: ""
+
 # RTVI_VLM_MODEL_TO_USE passed to the container (default: vlmName)
 rtviVlmModelToUse: ""
 # Inline YAML content for realtime-config.yml (always-on VLM alert rules). Leave "" for empty default.

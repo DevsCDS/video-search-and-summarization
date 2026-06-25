@@ -92,6 +92,9 @@ externalIp: ""
 vstInternalIp: ""
 vssAgentVersion: "3.2.0"
 lvsBackendService: ""
+# RTVI CV service port (compose: RTVI_CV_PORT, default 9000). Used to
+# build the RTVI_CV_ENDPOINT default (http://<release>-vss-rtvi-cv:<port>).
+rtviCvPort: "9000"
 
 # [Optional] HTTP-client timeouts (seconds) for the post-upload pipeline in
 # services/agent/src/vss_agents/api/video_ingest.py. Each value flows in as
@@ -159,6 +162,11 @@ env:
   value: ''
 - name: RTVI_CV_PORT
   value: ''
+# Compose parity: deploy/docker/services/agent/compose.yml sets
+# RTVI_CV_ENDPOINT (defaults to http://vss-rtvi-cv:${RTVI_CV_PORT:-9000}).
+# Used by config.yml for rtvi_cv_base_url / rtvi_cv_endpoint.
+- name: RTVI_CV_ENDPOINT
+  value: '{{- $g := .Values.global | default dict }}{{- $pfx := default false (coalesce .Values.useReleaseNamePrefix ((index $g "useReleaseNamePrefix") | default false)) }}{{- $cvHost := ternary (printf "%s-vss-rtvi-cv" .Release.Name) "vss-rtvi-cv" $pfx }}{{- $cvPort := (.Values.rtviCvPort | default "9000") | toString }}{{- printf "http://%s:%s" $cvHost $cvPort -}}'
 - name: VSS_ES_PORT
   value: ''
 - name: VST_BASE_URL

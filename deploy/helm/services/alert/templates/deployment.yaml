@@ -106,6 +106,20 @@ spec:
               value: {{ $vlmNameStr | quote }}
             - name: RTVI_VLM_MODEL_TO_USE
               value: {{ .Values.rtviVlmModelToUse | default $vlmNameStr | quote }}
+            {{- /* Compose parity: deploy/docker/services/alert/compose.yml sets
+                  RTVI_VLM_BASE_URL (realtime VLM endpoint, consumed by
+                  services/alert/realtime/services/realtime_service.py), VST_INTERNAL_URL
+                  (used by alert when invoking VST APIs), and ALERT_BRIDGE_PORT
+                  (mirrors service.port; the app binds 0.0.0.0:9080). */}}
+            {{- $rtviVlmSvc := trim (.Values.rtviVlmServiceName | default "vss-rtvi-vlm") }}
+            {{- $rtviVlmDef := ternary (printf "http://%s-%s:8000" .Release.Name $rtviVlmSvc) (printf "http://%s:8000" $rtviVlmSvc) $pfx }}
+            - name: RTVI_VLM_BASE_URL
+              value: {{ trim (.Values.rtviVlmBaseUrl | default "") | default $rtviVlmDef | quote }}
+            {{- $vstIngressDef := ternary (printf "http://%s-vss-vios-ingress:30888" .Release.Name) "http://vss-vios-ingress:30888" $pfx }}
+            - name: VST_INTERNAL_URL
+              value: {{ trim (.Values.vstInternalUrl | default "") | default $vstIngressDef | quote }}
+            - name: ALERT_BRIDGE_PORT
+              value: {{ .Values.service.port | toString | quote }}
             - name: ALWAYS_ON_RULES_CONFIG
               value: "/app/configs/realtime-config.yml"
           volumeMounts:
