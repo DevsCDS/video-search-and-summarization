@@ -16,7 +16,19 @@
 services:
   sensor-bp-wait-bp-configurator:
     image: busybox:1.37.0
-    profiles: ["bp_wh_kafka_2d","bp_wh_redis_2d","bp_wh_2d","bp_wh_kafka_3d","bp_wh_redis_3d","bp_wh_kafka_mv3dt","bp_wh_redis_mv3dt","bp_wh_auto_calib_2d","bp_wh_auto_calib_3d","bp_wh_auto_calib_mv3dt"]
+    profiles:
+      [
+        "bp_wh_kafka_2d",
+        "bp_wh_redis_2d",
+        "bp_wh_2d",
+        "bp_wh_kafka_3d",
+        "bp_wh_redis_3d",
+        "bp_wh_kafka_mv3dt",
+        "bp_wh_redis_mv3dt",
+        "bp_wh_auto_calib_2d",
+        "bp_wh_auto_calib_3d",
+        "bp_wh_auto_calib_mv3dt",
+      ]
     network_mode: host
     container_name: sensor-bp-wait-bp-configurator
     restart: "no"
@@ -54,9 +66,13 @@ services:
       - ${VST_VIDEO_STORAGE_PATH}:/home/vst/vst_release/vst_video
     network_mode: host
     container_name: vss-vios-sensor
-    restart: on-failure    # Restart only if the container exits with non-zero status
+    restart: on-failure # Restart only if the container exits with non-zero status
     healthcheck:
-      test: ["CMD-SHELL", "bash -ec 'exec 3<>/dev/tcp/127.0.0.1/$${HTTP_PORT:-30000}'"]
+      test:
+        [
+          "CMD-SHELL",
+          "bash -ec 'exec 3<>/dev/tcp/127.0.0.1/$${HTTP_PORT:-30000}'",
+        ]
       timeout: 3s
       interval: 10s
       retries: 20
@@ -100,7 +116,11 @@ services:
     container_name: vss-vios-sensor
     restart: on-failure
     healthcheck:
-      test: ["CMD-SHELL", "bash -ec 'exec 3<>/dev/tcp/127.0.0.1/$${HTTP_PORT:-30000}'"]
+      test:
+        [
+          "CMD-SHELL",
+          "bash -ec 'exec 3<>/dev/tcp/127.0.0.1/$${HTTP_PORT:-30000}'",
+        ]
       timeout: 3s
       interval: 10s
       retries: 20
@@ -143,7 +163,11 @@ services:
     container_name: vss-vios-sensor
     restart: on-failure
     healthcheck:
-      test: ["CMD-SHELL", "bash -ec 'exec 3<>/dev/tcp/127.0.0.1/$${HTTP_PORT:-30000}'"]
+      test:
+        [
+          "CMD-SHELL",
+          "bash -ec 'exec 3<>/dev/tcp/127.0.0.1/$${HTTP_PORT:-30000}'",
+        ]
       timeout: 3s
       interval: 10s
       retries: 20
@@ -162,8 +186,19 @@ services:
       - bp_wh_redis_mv3dt
       - bp_wh_auto_calib_mv3dt
     user: "0:0"
-    runtime: nvidia
+    #runtime: nvidia
     entrypoint: ["/bin/bash", "-c", "exec /home/vst/vst_release/launch_vst"]
+    deploy:
+      restart_policy:
+        condition: on-failure
+        max_attempts: 2
+      resources:
+        reservations:
+          devices:
+            - capabilities:
+                - gpu
+              device_ids:
+                - "${RT_CV_DEVICE_ID:-0}"
     environment:
       - ADAPTOR=${VST_ADAPTOR:-vst_rtsp}
       - NEED_RECORDING=false
@@ -183,7 +218,11 @@ services:
     container_name: vss-vios-sensor
     restart: on-failure
     healthcheck:
-      test: ["CMD-SHELL", "bash -ec 'exec 3<>/dev/tcp/127.0.0.1/$${HTTP_PORT:-30000}'"]
+      test:
+        [
+          "CMD-SHELL",
+          "bash -ec 'exec 3<>/dev/tcp/127.0.0.1/$${HTTP_PORT:-30000}'",
+        ]
       timeout: 3s
       interval: 10s
       retries: 20

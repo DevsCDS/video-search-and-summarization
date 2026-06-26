@@ -17,7 +17,7 @@ services:
   perception:
     image: ${PERCEPTION_IMAGE:-nvcr.io/nvidia/vss-core/vss-rt-cv}:${PERCEPTION_TAG:-3.2.0}
     network_mode: "host"
-    runtime: nvidia
+    # runtime: nvidia
     container_name: vss-rtvi-cv-mv3dt
     deploy:
       restart_policy:
@@ -26,8 +26,8 @@ services:
       resources:
         reservations:
           devices:
-          - capabilities: [gpu]
-            device_ids: ["${RT_CV_DEVICE_ID:-0}"]
+            - capabilities: [gpu]
+              device_ids: ["${RT_CV_DEVICE_ID:-0}"]
     environment:
       STREAM_TYPE: ${STREAM_TYPE:-kafka}
       DEEPSTREAM_ENABLE_SENSOR_ID_EXTRACTION: "0"
@@ -53,7 +53,13 @@ services:
       MAX_EXPECTED_SENSORS: ${NUM_STREAMS:-4}
       BUFFER_DURATION_S: "2.0"
     healthcheck:
-      test: ["CMD", "python3", "-c", "import os,sys; sys.exit(0 if os.path.isfile('/tmp/fusion_ready') else 1)"]
+      test:
+        [
+          "CMD",
+          "python3",
+          "-c",
+          "import os,sys; sys.exit(0 if os.path.isfile('/tmp/fusion_ready') else 1)",
+        ]
       interval: 2s
       timeout: 2s
       retries: 30

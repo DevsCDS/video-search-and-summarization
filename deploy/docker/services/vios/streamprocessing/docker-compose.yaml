@@ -16,12 +16,24 @@
 services:
   streamprocessing-ms:
     image: ${VST_STREAM_PROCESSOR_IMAGE}
-    profiles: ["bp_developer_base_2d","bp_developer_search_2d","bp_developer_lvs_2d","bp_developer_alerts_2d_cv","bp_developer_alerts_2d_vlm"]
+    profiles:
+      [
+        "bp_developer_base_2d",
+        "bp_developer_search_2d",
+        "bp_developer_lvs_2d",
+        "bp_developer_alerts_2d_cv",
+        "bp_developer_alerts_2d_vlm",
+      ]
     container_name: vss-vios-streamprocessing
     network_mode: host
     runtime: nvidia
     user: "0:0"
-    entrypoint: ["/bin/bash", "-c", "if [ \"${VST_INSTALL_ADDITIONAL_PACKAGES}\" = \"true\" ]; then /home/vst/vst_release/tools/user_additional_install.sh; fi && exec /home/vst/vst_release/launch_vst"]
+    entrypoint:
+      [
+        "/bin/bash",
+        "-c",
+        'if [ "${VST_INSTALL_ADDITIONAL_PACKAGES}" = "true" ]; then /home/vst/vst_release/tools/user_additional_install.sh; fi && exec /home/vst/vst_release/launch_vst',
+      ]
     environment:
       - VST_INSTALL_ADDITIONAL_PACKAGES=${VST_INSTALL_ADDITIONAL_PACKAGES}
       - CONTAINER_NAME=vss-vios-streamprocessing
@@ -50,7 +62,11 @@ services:
       restart_policy:
         condition: always
     healthcheck:
-      test: ["CMD-SHELL", "bash -ec 'exec 3<>/dev/tcp/127.0.0.1/$${HTTP_PORT:-30001}'"]
+      test:
+        [
+          "CMD-SHELL",
+          "bash -ec 'exec 3<>/dev/tcp/127.0.0.1/$${HTTP_PORT:-30001}'",
+        ]
       # Handle slow apt mirrors which delays package installs and service startup
       # Hence widen retries x interval ~ 25min so healthcheck outlasts apt
       interval: 20s
@@ -65,12 +81,18 @@ services:
 
   streamprocessing-ms-2d:
     image: ${VST_STREAM_PROCESSOR_IMAGE}
-    profiles: ["bp_wh_kafka_2d","bp_wh_redis_2d","bp_wh_2d","bp_wh_auto_calib_2d"]
+    profiles:
+      ["bp_wh_kafka_2d", "bp_wh_redis_2d", "bp_wh_2d", "bp_wh_auto_calib_2d"]
     container_name: vss-vios-streamprocessing
     network_mode: host
     runtime: nvidia
     user: "0:0"
-    entrypoint: ["/bin/bash", "-c", "if [ \"${VST_INSTALL_ADDITIONAL_PACKAGES}\" = \"true\" ]; then /home/vst/vst_release/tools/user_additional_install.sh; fi && exec /home/vst/vst_release/launch_vst"]
+    entrypoint:
+      [
+        "/bin/bash",
+        "-c",
+        'if [ "${VST_INSTALL_ADDITIONAL_PACKAGES}" = "true" ]; then /home/vst/vst_release/tools/user_additional_install.sh; fi && exec /home/vst/vst_release/launch_vst',
+      ]
     environment:
       - VST_INSTALL_ADDITIONAL_PACKAGES=${VST_INSTALL_ADDITIONAL_PACKAGES}
       - CONTAINER_NAME=vss-vios-streamprocessing
@@ -101,7 +123,11 @@ services:
       restart_policy:
         condition: always
     healthcheck:
-      test: ["CMD-SHELL", "bash -ec 'exec 3<>/dev/tcp/127.0.0.1/${HTTP_PORT:-30001}'"]
+      test:
+        [
+          "CMD-SHELL",
+          "bash -ec 'exec 3<>/dev/tcp/127.0.0.1/${HTTP_PORT:-30001}'",
+        ]
       interval: 20s
       timeout: 10s
       retries: 75
@@ -114,12 +140,17 @@ services:
 
   streamprocessing-ms-3d:
     image: ${VST_STREAM_PROCESSOR_IMAGE}
-    profiles: ["bp_wh_kafka_3d","bp_wh_redis_3d", "bp_wh_auto_calib_3d"]
+    profiles: ["bp_wh_kafka_3d", "bp_wh_redis_3d", "bp_wh_auto_calib_3d"]
     container_name: vss-vios-streamprocessing
     network_mode: host
     runtime: nvidia
     user: "0:0"
-    entrypoint: ["/bin/bash", "-c", "if [ \"${VST_INSTALL_ADDITIONAL_PACKAGES}\" = \"true\" ]; then /home/vst/vst_release/tools/user_additional_install.sh; fi && exec /home/vst/vst_release/launch_vst"]
+    entrypoint:
+      [
+        "/bin/bash",
+        "-c",
+        'if [ "${VST_INSTALL_ADDITIONAL_PACKAGES}" = "true" ]; then /home/vst/vst_release/tools/user_additional_install.sh; fi && exec /home/vst/vst_release/launch_vst',
+      ]
     environment:
       - VST_INSTALL_ADDITIONAL_PACKAGES=${VST_INSTALL_ADDITIONAL_PACKAGES}
       - CONTAINER_NAME=vss-vios-streamprocessing
@@ -152,7 +183,11 @@ services:
       restart_policy:
         condition: always
     healthcheck:
-      test: ["CMD-SHELL", "bash -ec 'exec 3<>/dev/tcp/127.0.0.1/${HTTP_PORT:-30001}'"]
+      test:
+        [
+          "CMD-SHELL",
+          "bash -ec 'exec 3<>/dev/tcp/127.0.0.1/${HTTP_PORT:-30001}'",
+        ]
       interval: 20s
       timeout: 10s
       retries: 75
@@ -165,12 +200,18 @@ services:
 
   streamprocessing-ms-mv3dt:
     image: ${VST_STREAM_PROCESSOR_IMAGE}
-    profiles: ["bp_wh_kafka_mv3dt","bp_wh_redis_mv3dt","bp_wh_auto_calib_mv3dt"]
+    profiles:
+      ["bp_wh_kafka_mv3dt", "bp_wh_redis_mv3dt", "bp_wh_auto_calib_mv3dt"]
     container_name: vss-vios-streamprocessing
     network_mode: host
-    runtime: nvidia
+    # runtime: nvidia
     user: "0:0"
-    entrypoint: ["/bin/bash", "-c", "if [ \"${VST_INSTALL_ADDITIONAL_PACKAGES}\" = \"true\" ]; then /home/vst/vst_release/tools/user_additional_install.sh; fi && exec /home/vst/vst_release/launch_vst"]
+    entrypoint:
+      [
+        "/bin/bash",
+        "-c",
+        'if [ "${VST_INSTALL_ADDITIONAL_PACKAGES}" = "true" ]; then /home/vst/vst_release/tools/user_additional_install.sh; fi && exec /home/vst/vst_release/launch_vst',
+      ]
     environment:
       - VST_INSTALL_ADDITIONAL_PACKAGES=${VST_INSTALL_ADDITIONAL_PACKAGES}
       - CONTAINER_NAME=vss-vios-streamprocessing
@@ -203,7 +244,11 @@ services:
       restart_policy:
         condition: always
     healthcheck:
-      test: ["CMD-SHELL", "bash -ec 'exec 3<>/dev/tcp/127.0.0.1/${HTTP_PORT:-30001}'"]
+      test:
+        [
+          "CMD-SHELL",
+          "bash -ec 'exec 3<>/dev/tcp/127.0.0.1/${HTTP_PORT:-30001}'",
+        ]
       interval: 20s
       timeout: 10s
       retries: 75

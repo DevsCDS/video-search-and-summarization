@@ -155,7 +155,7 @@
 			"name": "in3dMode",
 			"value": "true"
 		},
-        {
+		{
 			"name": "playbackLoop",
 			"value": "10000"
 		},

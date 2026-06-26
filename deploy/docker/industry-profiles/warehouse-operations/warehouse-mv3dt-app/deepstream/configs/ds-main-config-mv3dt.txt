@@ -97,7 +97,7 @@ msg-conv-payload-type=2
 msg-conv-msg2p-new-api=0
 msg-conv-frame-interval=1
 msg-broker-proto-lib=/opt/nvidia/deepstream/deepstream/lib/libnvds_kafka_proto.so
-msg-broker-conn-str=localhost;9092;mdx-raw
+msg-broker-conn-str=localhost;9092;mdx-bev
 topic=mdx-raw
 msg-broker-config=ds-kafka-config.txt
 msg-conv-msg2p-lib=/opt/nvidia/deepstream/deepstream/lib/libnvds_msgconv_mega.so
@@ -135,7 +135,7 @@ msg-conv-payload-type=0
 enable=0
 proto-lib=/opt/nvidia/deepstream/deepstream/lib/libnvds_kafka_proto.so
 conn-str=<host>;<port>
-config-file=/opt/nvidia/deepstream/deepstream/sources/libs/kafka_protocol_adaptor/cfg_kafka.txt
+config-file=ds-pgie-config.yml
 subscribe-topic-list=<topic1>;<topic2>;<topicN>
 
 [osd]
