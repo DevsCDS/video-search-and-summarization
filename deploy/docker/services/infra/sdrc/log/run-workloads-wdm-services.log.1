@@ -1,0 +1,1045 @@
+2026-06-25 20:27:28 [run-workloads] lib.messaging.redisMessaging - INFO - connected to redis 127.0.0.1  port 6379
+2026-06-25 20:27:28 [run-workloads] lib.controller - INFO - pod watcher thread started
+2026-06-25 20:27:28 [run-workloads] lib.controller - INFO - Subscribing to channels: wdm_error_events
+2026-06-25 20:27:28 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: worker restart_on_nonzero=True delay_s=3.0
+2026-06-25 20:27:28 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: worker restart_on_nonzero=True delay_s=3.0
+2026-06-25 20:27:28 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_SERVER=127.0.0.1 (from env)
+2026-06-25 20:27:28 [run-workloads] lib.controller - INFO - Starting Redis pub/sub listener
+2026-06-25 20:27:28 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-25 20:27:28 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-25 20:27:28 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_PORT=6379 (from env)
+2026-06-25 20:27:28 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing': worker subprocess stdout/stderr → /logs/worker-docker-workload-streamprocessing-vss-vios-streamprocessing-4005.log and parent stdout
+2026-06-25 20:27:28 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt': worker subprocess stdout/stderr → /logs/worker-docker-workload-rtvi-cv-mv3dt-vss-rtvi-cv-mv3dt-4004.log and parent stdout
+2026-06-25 20:27:28 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_TARGET_PORT_MAPPING={'default': 5000, 'grpc': 50052} (default is set in config.py, used by app.py)
+2026-06-25 20:27:28 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_CONTROLLER_HOST=127.0.0.1 WDM_CONTROLLER_PORT=5003 (WDM_ENVOY_DASHBOARD_PROXY enabled)
+2026-06-25 20:27:28 [run-workloads] __main__ - INFO - Started workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005 pid=20
+2026-06-25 20:27:28 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_XDS_USE_POD_DNS=False WDM_XDS_USE_IP_ADDRESS=True
+2026-06-25 20:27:28 [run-workloads] __main__ - INFO - Started workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004 pid=22
+2026-06-25 20:27:29 [run-workloads] lib.xDS.envoyxDS - INFO - redis connected
+2026-06-25 20:27:29 [run-workloads] werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.65.3:5003
+2026-06-25 20:27:29 [run-workloads] werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-25 20:27:56 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.069572
+2026-06-25 20:27:56 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:27:56] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:28:18 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.028597
+2026-06-25 20:28:18 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:28:18] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:28:40 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.031663
+2026-06-25 20:28:40 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:28:40] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:29:00 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.040095
+2026-06-25 20:29:00 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:29:00] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:29:16 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.030466
+2026-06-25 20:29:16 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:29:16] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:29:46 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.045669
+2026-06-25 20:29:46 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:29:46] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:30:03 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.067609
+2026-06-25 20:30:03 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:30:03] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:30:23 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.039518
+2026-06-25 20:30:23 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:30:23] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:30:48 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.031197
+2026-06-25 20:30:48 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:30:48] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:31:12 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.045506
+2026-06-25 20:31:12 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:31:12] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:31:37 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.486421
+2026-06-25 20:31:37 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:31:37] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:31:38 [run-workloads] lib.controller - INFO - Received reprovision message: {'wlobject': 'vss-rtvi-cv-mv3dt', 'podname': 'vss-rtvi-cv-mv3dt', 'timestamp': '2026-06-25T20:31:38.061520Z', 'status': 'down', 'ids': ['9844ec83-42a4-49c6-a2fa-77e3772fd78e', '77e97fa2-7f10-4495-985f-e6f176b36e04', 'ea4df723-7cec-4bdf-8bfa-069aae035bf7', '80684c07-98fe-4a22-b176-8a561712c9cc', '9e4098fb-347a-4177-a802-e09f469fc2bf', '5922bdef-a906-459a-a976-6f79110645f6', '3caf136a-dde7-46d0-9348-20fc5450fb89', 'fcedcb55-fd74-4846-9ea1-e377a1aba649', '96cedff4-6bd1-4905-9117-f860c4c5b3a4', '7469b089-6f48-468c-9ddc-b038d0c1df18', '99c27ac8-4c3e-4f6d-9d14-d94cb74575b5', '37a8b9ed-85f3-45e0-87dd-486502e36afa', '2df00324-ed07-4b0a-b2ca-3e8c03c918fe', 'b61128c3-ca7e-4999-8f83-df1d8449672c', 'fc21211b-dc32-4da3-bec3-3ceb05a049fc', '9436a923-ecc6-46f2-b2de-9968e2001e8c', '72ee48c2-8d0d-42be-8e95-1900fd9f8150', '11a7b469-819b-4e75-903d-1b6117a87eb9', '741f56e9-a316-46cc-b3b0-ff33e4fb51d7', '116dcd97-5b91-4f8d-825b-488299df6e70', 'fb97ee3f-2421-4439-829b-060d8aed8778', 'e51afe0a-fbec-4105-bd4c-d2714d54b2bb', 'c6db5575-3a1b-42be-8cf6-ffaedfdc4a5a', '03836e9d-ef6b-4b7c-a6df-26bb61922328', '1cdb3b17-2363-44e9-80d3-7c8cd1cebd6a', 'cabbf07f-253e-4e6e-8d50-4fb00528990c', 'ef8dc1cb-8b02-4c89-9935-d87d12eec7a2', '9203df16-0a4a-4c39-9649-a5741f1e67e1', '62caf835-01ca-4525-91ad-d4b26d289a73', 'f0fa2150-4c97-41cf-b0df-f88950419b4a', 'd5442c44-a0d2-4ce2-b815-10e22674ef2e', '5ce3f13c-0a30-4aa0-bc6e-7b41d3ca2a71', '39105ff0-b39f-4561-be9c-363e833044c0', '422007d1-9d2f-425d-a79f-a8037db0730a', 'e2690969-2273-469c-90cd-5c2e8397a60e', '7dae87be-a80f-40f1-80ac-e1b9291d9703', 'b6c789d4-77c3-4308-bc2f-71516fa9cf20', '198f332d-96c9-495c-80d6-7ace6f46c861', '721f0388-e2e7-47ca-b124-6ead50938b73', 'bb59c5d5-92f6-4a83-9472-af6e59df2edc', '1ea0031c-1e2c-4645-a2db-84fb1483c84d', 'b3e6d3ba-c0b1-4377-82a2-613bf0042653', '9fe7043a-8345-47c1-b25b-5c78a981350a', '4eea00a7-280d-44bb-9842-38a6d4dc8cbb', '8000a4aa-2a56-4efe-bef9-e2a9a3ef12cd', '5f3a61b6-e0ae-4925-a4bb-fc84d4cc07e2', 'ceac7265-d388-4812-936e-361c0f295d9b', '2b918d7f-22b8-4dd8-a634-cbd697a30dc0', '3f878d5a-038e-458d-bfce-c99c68049081', '52dc712f-047e-42c6-840b-45dd4d76cab8', '630a664e-fe3e-43f6-869c-dd21e706222e', '84e7569d-7b96-4627-a2b8-210e71b4df03', 'af0d0ffa-16d6-4373-b078-57306569a571', 'c22bbff9-9d64-4b8a-8e27-71272c53fb3c', 'cfdbdff4-c62e-4395-9ab2-aa53be2e8903', '6c6f4227-b220-4599-9984-f7db678a2c10', '6a54f0d8-dc92-4e3a-9c9c-ab8957246e8e', '8fee13d8-1e45-49af-82e5-f384e2c1f922', '9b015fda-31e2-4ddf-881b-2198650977b1', '0d4b0431-b076-43ba-8124-ea6cb4a05241', '3b2798e9-eb2a-4206-a74a-46039e5d2591'], 'type': 'reprovision', 'event_field': 'event', 'msg_key': 'vst.event', 'redis_msg_field': 'sensor.id', 'payload': [{'alert_type': 'camera_status_change', 'created_at': '2026-06-25T20:28:19Z', 'event': {'camera_id': '1b3351d0-4657-40d0-bc85-6adef1b752e1', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:30556/live/1b3351d0-4657-40d0-bc85-6adef1b752e1', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/1b3351d0-4657-40d0-bc85-6adef1b752e1', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T20:28:19Z', 'event': {'camera_id': '25c785d6-244c-417f-ac9e-cdef8052d967', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:30559/live/25c785d6-244c-417f-ac9e-cdef8052d967', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/25c785d6-244c-417f-ac9e-cdef8052d967', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}]}
+2026-06-25 20:31:38 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '1b3351d0-4657-40d0-bc85-6adef1b752e1', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:30556/live/1b3351d0-4657-40d0-bc85-6adef1b752e1', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/1b3351d0-4657-40d0-bc85-6adef1b752e1', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 20:31:38 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '25c785d6-244c-417f-ac9e-cdef8052d967', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:30559/live/25c785d6-244c-417f-ac9e-cdef8052d967', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/25c785d6-244c-417f-ac9e-cdef8052d967', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 20:31:38 [run-workloads] lib.controller - INFO - Reprovision forwarded 2/2 events to stream 'vst.event'
+2026-06-25 20:32:00 [run-workloads] lib.controller - INFO - Received reprovision message: {'wlobject': 'vss-vios-streamprocessing', 'podname': 'vss-vios-streamprocessing', 'timestamp': '2026-06-25T20:32:00.916913Z', 'status': 'down', 'ids': ['ea4df723-7cec-4bdf-8bfa-069aae035bf7', '80684c07-98fe-4a22-b176-8a561712c9cc', '9844ec83-42a4-49c6-a2fa-77e3772fd78e', '77e97fa2-7f10-4495-985f-e6f176b36e04', 'fcedcb55-fd74-4846-9ea1-e377a1aba649', '9e4098fb-347a-4177-a802-e09f469fc2bf', '5922bdef-a906-459a-a976-6f79110645f6', '3caf136a-dde7-46d0-9348-20fc5450fb89', '96cedff4-6bd1-4905-9117-f860c4c5b3a4', '7469b089-6f48-468c-9ddc-b038d0c1df18', '37a8b9ed-85f3-45e0-87dd-486502e36afa', '99c27ac8-4c3e-4f6d-9d14-d94cb74575b5', '2df00324-ed07-4b0a-b2ca-3e8c03c918fe', 'b61128c3-ca7e-4999-8f83-df1d8449672c', 'fc21211b-dc32-4da3-bec3-3ceb05a049fc', '9436a923-ecc6-46f2-b2de-9968e2001e8c', '11a7b469-819b-4e75-903d-1b6117a87eb9', '72ee48c2-8d0d-42be-8e95-1900fd9f8150', '741f56e9-a316-46cc-b3b0-ff33e4fb51d7', '116dcd97-5b91-4f8d-825b-488299df6e70', 'fb97ee3f-2421-4439-829b-060d8aed8778', 'e51afe0a-fbec-4105-bd4c-d2714d54b2bb', 'c6db5575-3a1b-42be-8cf6-ffaedfdc4a5a', '03836e9d-ef6b-4b7c-a6df-26bb61922328', '1cdb3b17-2363-44e9-80d3-7c8cd1cebd6a', 'cabbf07f-253e-4e6e-8d50-4fb00528990c', '9203df16-0a4a-4c39-9649-a5741f1e67e1', 'ef8dc1cb-8b02-4c89-9935-d87d12eec7a2', '62caf835-01ca-4525-91ad-d4b26d289a73', '5ce3f13c-0a30-4aa0-bc6e-7b41d3ca2a71', 'd5442c44-a0d2-4ce2-b815-10e22674ef2e', 'f0fa2150-4c97-41cf-b0df-f88950419b4a', '39105ff0-b39f-4561-be9c-363e833044c0', 'e2690969-2273-469c-90cd-5c2e8397a60e', '7dae87be-a80f-40f1-80ac-e1b9291d9703', '422007d1-9d2f-425d-a79f-a8037db0730a', 'b6c789d4-77c3-4308-bc2f-71516fa9cf20', '198f332d-96c9-495c-80d6-7ace6f46c861', '1ea0031c-1e2c-4645-a2db-84fb1483c84d', '721f0388-e2e7-47ca-b124-6ead50938b73', 'bb59c5d5-92f6-4a83-9472-af6e59df2edc', 'b3e6d3ba-c0b1-4377-82a2-613bf0042653', '9fe7043a-8345-47c1-b25b-5c78a981350a', '4eea00a7-280d-44bb-9842-38a6d4dc8cbb', '8000a4aa-2a56-4efe-bef9-e2a9a3ef12cd', '5f3a61b6-e0ae-4925-a4bb-fc84d4cc07e2', 'ceac7265-d388-4812-936e-361c0f295d9b', '3f878d5a-038e-458d-bfce-c99c68049081', '2b918d7f-22b8-4dd8-a634-cbd697a30dc0', '52dc712f-047e-42c6-840b-45dd4d76cab8', '84e7569d-7b96-4627-a2b8-210e71b4df03', '630a664e-fe3e-43f6-869c-dd21e706222e', 'af0d0ffa-16d6-4373-b078-57306569a571', 'c22bbff9-9d64-4b8a-8e27-71272c53fb3c', '6a54f0d8-dc92-4e3a-9c9c-ab8957246e8e', 'cfdbdff4-c62e-4395-9ab2-aa53be2e8903', '6c6f4227-b220-4599-9984-f7db678a2c10', '9b015fda-31e2-4ddf-881b-2198650977b1', '8fee13d8-1e45-49af-82e5-f384e2c1f922', '0d4b0431-b076-43ba-8124-ea6cb4a05241', '3b2798e9-eb2a-4206-a74a-46039e5d2591', '2d2852ca-b3d2-4a90-a70f-56c842802658', '1b3351d0-4657-40d0-bc85-6adef1b752e1', '25c785d6-244c-417f-ac9e-cdef8052d967', '4a8fc2c2-0b28-42d2-8f60-9254d4dbb5d7'], 'type': 'reprovision', 'event_field': 'event', 'msg_key': 'vst.event', 'redis_msg_field': 'sensor.id', 'payload': [{'alert_type': 'camera_status_change', 'created_at': '2026-06-25T20:28:15Z', 'event': {'camera_id': '2d2852ca-b3d2-4a90-a70f-56c842802658', 'camera_name': 'Camera', 'camera_url': 'rtsp://192.168.65.6:31554/nvstream/tmp/nv_streamer/videos/Camera.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T20:28:15Z', 'event': {'camera_id': '25c785d6-244c-417f-ac9e-cdef8052d967', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:31555/nvstream/tmp/nv_streamer/videos/Camera_01.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T20:28:15Z', 'event': {'camera_id': '1b3351d0-4657-40d0-bc85-6adef1b752e1', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:31556/nvstream/tmp/nv_streamer/videos/Camera_02.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T20:28:15Z', 'event': {'camera_id': '4a8fc2c2-0b28-42d2-8f60-9254d4dbb5d7', 'camera_name': 'Camera_03', 'camera_url': 'rtsp://192.168.65.6:31557/nvstream/tmp/nv_streamer/videos/Camera_03.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}]}
+2026-06-25 20:32:00 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '2d2852ca-b3d2-4a90-a70f-56c842802658', 'camera_name': 'Camera', 'camera_url': 'rtsp://192.168.65.6:31554/nvstream/tmp/nv_streamer/videos/Camera.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 20:32:00 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '25c785d6-244c-417f-ac9e-cdef8052d967', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:31555/nvstream/tmp/nv_streamer/videos/Camera_01.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 20:32:00 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '1b3351d0-4657-40d0-bc85-6adef1b752e1', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:31556/nvstream/tmp/nv_streamer/videos/Camera_02.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 20:32:00 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '4a8fc2c2-0b28-42d2-8f60-9254d4dbb5d7', 'camera_name': 'Camera_03', 'camera_url': 'rtsp://192.168.65.6:31557/nvstream/tmp/nv_streamer/videos/Camera_03.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 20:32:00 [run-workloads] lib.controller - INFO - Reprovision forwarded 4/4 events to stream 'vst.event'
+2026-06-25 20:32:04 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=3.039499
+2026-06-25 20:32:04 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:32:04] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:32:08 [run-workloads] lib.controller - INFO - Received reprovision message: {'wlobject': 'vss-rtvi-cv-mv3dt', 'podname': 'vss-rtvi-cv-mv3dt', 'timestamp': '2026-06-25T20:32:08.642797Z', 'status': 'down', 'ids': ['9844ec83-42a4-49c6-a2fa-77e3772fd78e', '77e97fa2-7f10-4495-985f-e6f176b36e04', 'ea4df723-7cec-4bdf-8bfa-069aae035bf7', '80684c07-98fe-4a22-b176-8a561712c9cc', '9e4098fb-347a-4177-a802-e09f469fc2bf', '5922bdef-a906-459a-a976-6f79110645f6', '3caf136a-dde7-46d0-9348-20fc5450fb89', 'fcedcb55-fd74-4846-9ea1-e377a1aba649', '96cedff4-6bd1-4905-9117-f860c4c5b3a4', '7469b089-6f48-468c-9ddc-b038d0c1df18', '99c27ac8-4c3e-4f6d-9d14-d94cb74575b5', '37a8b9ed-85f3-45e0-87dd-486502e36afa', '2df00324-ed07-4b0a-b2ca-3e8c03c918fe', 'b61128c3-ca7e-4999-8f83-df1d8449672c', 'fc21211b-dc32-4da3-bec3-3ceb05a049fc', '9436a923-ecc6-46f2-b2de-9968e2001e8c', '72ee48c2-8d0d-42be-8e95-1900fd9f8150', '11a7b469-819b-4e75-903d-1b6117a87eb9', '741f56e9-a316-46cc-b3b0-ff33e4fb51d7', '116dcd97-5b91-4f8d-825b-488299df6e70', 'fb97ee3f-2421-4439-829b-060d8aed8778', 'e51afe0a-fbec-4105-bd4c-d2714d54b2bb', 'c6db5575-3a1b-42be-8cf6-ffaedfdc4a5a', '03836e9d-ef6b-4b7c-a6df-26bb61922328', '1cdb3b17-2363-44e9-80d3-7c8cd1cebd6a', 'cabbf07f-253e-4e6e-8d50-4fb00528990c', 'ef8dc1cb-8b02-4c89-9935-d87d12eec7a2', '9203df16-0a4a-4c39-9649-a5741f1e67e1', '62caf835-01ca-4525-91ad-d4b26d289a73', 'f0fa2150-4c97-41cf-b0df-f88950419b4a', 'd5442c44-a0d2-4ce2-b815-10e22674ef2e', '5ce3f13c-0a30-4aa0-bc6e-7b41d3ca2a71', '39105ff0-b39f-4561-be9c-363e833044c0', '422007d1-9d2f-425d-a79f-a8037db0730a', 'e2690969-2273-469c-90cd-5c2e8397a60e', '7dae87be-a80f-40f1-80ac-e1b9291d9703', 'b6c789d4-77c3-4308-bc2f-71516fa9cf20', '198f332d-96c9-495c-80d6-7ace6f46c861', '721f0388-e2e7-47ca-b124-6ead50938b73', 'bb59c5d5-92f6-4a83-9472-af6e59df2edc', '1ea0031c-1e2c-4645-a2db-84fb1483c84d', 'b3e6d3ba-c0b1-4377-82a2-613bf0042653', '9fe7043a-8345-47c1-b25b-5c78a981350a', '4eea00a7-280d-44bb-9842-38a6d4dc8cbb', '8000a4aa-2a56-4efe-bef9-e2a9a3ef12cd', '5f3a61b6-e0ae-4925-a4bb-fc84d4cc07e2', 'ceac7265-d388-4812-936e-361c0f295d9b', '2b918d7f-22b8-4dd8-a634-cbd697a30dc0', '3f878d5a-038e-458d-bfce-c99c68049081', '52dc712f-047e-42c6-840b-45dd4d76cab8', '630a664e-fe3e-43f6-869c-dd21e706222e', '84e7569d-7b96-4627-a2b8-210e71b4df03', 'af0d0ffa-16d6-4373-b078-57306569a571', 'c22bbff9-9d64-4b8a-8e27-71272c53fb3c', 'cfdbdff4-c62e-4395-9ab2-aa53be2e8903', '6c6f4227-b220-4599-9984-f7db678a2c10', '6a54f0d8-dc92-4e3a-9c9c-ab8957246e8e', '8fee13d8-1e45-49af-82e5-f384e2c1f922', '9b015fda-31e2-4ddf-881b-2198650977b1', '0d4b0431-b076-43ba-8124-ea6cb4a05241', '3b2798e9-eb2a-4206-a74a-46039e5d2591'], 'type': 'reprovision', 'event_field': 'event', 'msg_key': 'vst.event', 'redis_msg_field': 'sensor.id', 'payload': [{'alert_type': 'camera_status_change', 'created_at': '2026-06-25T20:28:19Z', 'event': {'camera_id': '25c785d6-244c-417f-ac9e-cdef8052d967', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:30555/live/25c785d6-244c-417f-ac9e-cdef8052d967', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/25c785d6-244c-417f-ac9e-cdef8052d967', 'change': 'camera_remove', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T20:28:19Z', 'event': {'camera_id': '1b3351d0-4657-40d0-bc85-6adef1b752e1', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:30559/live/1b3351d0-4657-40d0-bc85-6adef1b752e1', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/1b3351d0-4657-40d0-bc85-6adef1b752e1', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T20:28:19Z', 'event': {'camera_id': '4a8fc2c2-0b28-42d2-8f60-9254d4dbb5d7', 'camera_name': 'Camera_03', 'camera_url': 'rtsp://192.168.65.6:30557/live/4a8fc2c2-0b28-42d2-8f60-9254d4dbb5d7', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/4a8fc2c2-0b28-42d2-8f60-9254d4dbb5d7', 'change': 'camera_remove', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T20:28:19Z', 'event': {'camera_id': '2d2852ca-b3d2-4a90-a70f-56c842802658', 'camera_name': 'Camera', 'camera_url': 'rtsp://192.168.65.6:30554/live/2d2852ca-b3d2-4a90-a70f-56c842802658', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/2d2852ca-b3d2-4a90-a70f-56c842802658', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}]}
+2026-06-25 20:32:08 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '25c785d6-244c-417f-ac9e-cdef8052d967', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:30555/live/25c785d6-244c-417f-ac9e-cdef8052d967', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/25c785d6-244c-417f-ac9e-cdef8052d967', 'change': 'camera_remove', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 20:32:08 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '1b3351d0-4657-40d0-bc85-6adef1b752e1', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:30559/live/1b3351d0-4657-40d0-bc85-6adef1b752e1', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/1b3351d0-4657-40d0-bc85-6adef1b752e1', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 20:32:08 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '4a8fc2c2-0b28-42d2-8f60-9254d4dbb5d7', 'camera_name': 'Camera_03', 'camera_url': 'rtsp://192.168.65.6:30557/live/4a8fc2c2-0b28-42d2-8f60-9254d4dbb5d7', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/4a8fc2c2-0b28-42d2-8f60-9254d4dbb5d7', 'change': 'camera_remove', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 20:32:08 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '2d2852ca-b3d2-4a90-a70f-56c842802658', 'camera_name': 'Camera', 'camera_url': 'rtsp://192.168.65.6:30554/live/2d2852ca-b3d2-4a90-a70f-56c842802658', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/2d2852ca-b3d2-4a90-a70f-56c842802658', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 20:32:08 [run-workloads] lib.controller - INFO - Reprovision forwarded 4/4 events to stream 'vst.event'
+2026-06-25 20:32:12 [run-workloads] lib.controller - INFO - Received reprovision message: {'wlobject': 'vss-rtvi-cv-mv3dt', 'podname': 'vss-rtvi-cv-mv3dt', 'timestamp': '2026-06-25T20:32:12.572421Z', 'status': 'down', 'ids': ['9844ec83-42a4-49c6-a2fa-77e3772fd78e', '77e97fa2-7f10-4495-985f-e6f176b36e04', 'ea4df723-7cec-4bdf-8bfa-069aae035bf7', '80684c07-98fe-4a22-b176-8a561712c9cc', '9e4098fb-347a-4177-a802-e09f469fc2bf', '5922bdef-a906-459a-a976-6f79110645f6', '3caf136a-dde7-46d0-9348-20fc5450fb89', 'fcedcb55-fd74-4846-9ea1-e377a1aba649', '96cedff4-6bd1-4905-9117-f860c4c5b3a4', '7469b089-6f48-468c-9ddc-b038d0c1df18', '99c27ac8-4c3e-4f6d-9d14-d94cb74575b5', '37a8b9ed-85f3-45e0-87dd-486502e36afa', '2df00324-ed07-4b0a-b2ca-3e8c03c918fe', 'b61128c3-ca7e-4999-8f83-df1d8449672c', 'fc21211b-dc32-4da3-bec3-3ceb05a049fc', '9436a923-ecc6-46f2-b2de-9968e2001e8c', '72ee48c2-8d0d-42be-8e95-1900fd9f8150', '11a7b469-819b-4e75-903d-1b6117a87eb9', '741f56e9-a316-46cc-b3b0-ff33e4fb51d7', '116dcd97-5b91-4f8d-825b-488299df6e70', 'fb97ee3f-2421-4439-829b-060d8aed8778', 'e51afe0a-fbec-4105-bd4c-d2714d54b2bb', 'c6db5575-3a1b-42be-8cf6-ffaedfdc4a5a', '03836e9d-ef6b-4b7c-a6df-26bb61922328', '1cdb3b17-2363-44e9-80d3-7c8cd1cebd6a', 'cabbf07f-253e-4e6e-8d50-4fb00528990c', 'ef8dc1cb-8b02-4c89-9935-d87d12eec7a2', '9203df16-0a4a-4c39-9649-a5741f1e67e1', '62caf835-01ca-4525-91ad-d4b26d289a73', 'f0fa2150-4c97-41cf-b0df-f88950419b4a', 'd5442c44-a0d2-4ce2-b815-10e22674ef2e', '5ce3f13c-0a30-4aa0-bc6e-7b41d3ca2a71', '39105ff0-b39f-4561-be9c-363e833044c0', '422007d1-9d2f-425d-a79f-a8037db0730a', 'e2690969-2273-469c-90cd-5c2e8397a60e', '7dae87be-a80f-40f1-80ac-e1b9291d9703', 'b6c789d4-77c3-4308-bc2f-71516fa9cf20', '198f332d-96c9-495c-80d6-7ace6f46c861', '721f0388-e2e7-47ca-b124-6ead50938b73', 'bb59c5d5-92f6-4a83-9472-af6e59df2edc', '1ea0031c-1e2c-4645-a2db-84fb1483c84d', 'b3e6d3ba-c0b1-4377-82a2-613bf0042653', '9fe7043a-8345-47c1-b25b-5c78a981350a', '4eea00a7-280d-44bb-9842-38a6d4dc8cbb', '8000a4aa-2a56-4efe-bef9-e2a9a3ef12cd', '5f3a61b6-e0ae-4925-a4bb-fc84d4cc07e2', 'ceac7265-d388-4812-936e-361c0f295d9b', '2b918d7f-22b8-4dd8-a634-cbd697a30dc0', '3f878d5a-038e-458d-bfce-c99c68049081', '52dc712f-047e-42c6-840b-45dd4d76cab8', '630a664e-fe3e-43f6-869c-dd21e706222e', '84e7569d-7b96-4627-a2b8-210e71b4df03', 'af0d0ffa-16d6-4373-b078-57306569a571', 'c22bbff9-9d64-4b8a-8e27-71272c53fb3c', 'cfdbdff4-c62e-4395-9ab2-aa53be2e8903', '6c6f4227-b220-4599-9984-f7db678a2c10', '6a54f0d8-dc92-4e3a-9c9c-ab8957246e8e', '8fee13d8-1e45-49af-82e5-f384e2c1f922', '9b015fda-31e2-4ddf-881b-2198650977b1', '0d4b0431-b076-43ba-8124-ea6cb4a05241', '3b2798e9-eb2a-4206-a74a-46039e5d2591'], 'type': 'reprovision', 'event_field': 'event', 'msg_key': 'vst.event', 'redis_msg_field': 'sensor.id', 'payload': [{'alert_type': 'camera_status_change', 'created_at': '2026-06-25T20:27:28Z', 'event': {'camera_id': '1b3351d0-4657-40d0-bc85-6adef1b752e1', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:30556/live/1b3351d0-4657-40d0-bc85-6adef1b752e1', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/1b3351d0-4657-40d0-bc85-6adef1b752e1', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T20:27:28Z', 'event': {'camera_id': '25c785d6-244c-417f-ac9e-cdef8052d967', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:30559/live/25c785d6-244c-417f-ac9e-cdef8052d967', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/25c785d6-244c-417f-ac9e-cdef8052d967', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T20:28:19Z', 'event': {'camera_id': '2d2852ca-b3d2-4a90-a70f-56c842802658', 'camera_name': 'Camera', 'camera_url': 'rtsp://192.168.65.6:30558/live/2d2852ca-b3d2-4a90-a70f-56c842802658', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/2d2852ca-b3d2-4a90-a70f-56c842802658', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}]}
+2026-06-25 20:32:12 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '1b3351d0-4657-40d0-bc85-6adef1b752e1', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:30556/live/1b3351d0-4657-40d0-bc85-6adef1b752e1', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/1b3351d0-4657-40d0-bc85-6adef1b752e1', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 20:32:12 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '25c785d6-244c-417f-ac9e-cdef8052d967', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:30559/live/25c785d6-244c-417f-ac9e-cdef8052d967', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/25c785d6-244c-417f-ac9e-cdef8052d967', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 20:32:12 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '2d2852ca-b3d2-4a90-a70f-56c842802658', 'camera_name': 'Camera', 'camera_url': 'rtsp://192.168.65.6:30558/live/2d2852ca-b3d2-4a90-a70f-56c842802658', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/2d2852ca-b3d2-4a90-a70f-56c842802658', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 20:32:12 [run-workloads] lib.controller - INFO - Reprovision forwarded 3/3 events to stream 'vst.event'
+2026-06-25 20:32:23 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.040565
+2026-06-25 20:32:23 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:32:23] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:32:49 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.028456
+2026-06-25 20:32:49 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:32:49] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:33:04 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.030618
+2026-06-25 20:33:04 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:33:04] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:33:27 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.029494
+2026-06-25 20:33:27 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:33:27] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:33:43 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.030164
+2026-06-25 20:33:43 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:33:43] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:34:01 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.038151
+2026-06-25 20:34:01 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:34:01] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:34:25 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.035234
+2026-06-25 20:34:25 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:34:25] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:34:49 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.045235
+2026-06-25 20:34:49 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:34:49] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:35:15 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.033846
+2026-06-25 20:35:15 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:35:15] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:35:44 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.030420
+2026-06-25 20:35:44 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:35:44] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:36:03 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.050174
+2026-06-25 20:36:03 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:36:03] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:36:27 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.032563
+2026-06-25 20:36:27 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:36:27] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:36:48 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.040420
+2026-06-25 20:36:48 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:36:48] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:37:15 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.027207
+2026-06-25 20:37:15 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:37:15] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:37:36 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.034386
+2026-06-25 20:37:36 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:37:36] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:37:54 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.033342
+2026-06-25 20:37:54 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:37:54] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:38:16 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.050480
+2026-06-25 20:38:16 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:38:16] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 20:38:33 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.037246
+2026-06-25 20:38:33 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 20:38:33] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:13:08 [run-workloads] lib.messaging.redisMessaging - INFO - connected to redis 127.0.0.1  port 6379
+2026-06-25 21:13:08 [run-workloads] lib.controller - INFO - pod watcher thread started
+2026-06-25 21:13:08 [run-workloads] lib.controller - INFO - Subscribing to channels: wdm_error_events
+2026-06-25 21:13:08 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: worker restart_on_nonzero=True delay_s=3.0
+2026-06-25 21:13:08 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: worker restart_on_nonzero=True delay_s=3.0
+2026-06-25 21:13:08 [run-workloads] lib.controller - INFO - Starting Redis pub/sub listener
+2026-06-25 21:13:08 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_SERVER=127.0.0.1 (from env)
+2026-06-25 21:13:08 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-25 21:13:08 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-25 21:13:08 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_PORT=6379 (from env)
+2026-06-25 21:13:08 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing': worker subprocess stdout/stderr → /logs/worker-docker-workload-streamprocessing-vss-vios-streamprocessing-4005.log and parent stdout
+2026-06-25 21:13:08 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt': worker subprocess stdout/stderr → /logs/worker-docker-workload-rtvi-cv-mv3dt-vss-rtvi-cv-mv3dt-4004.log and parent stdout
+2026-06-25 21:13:08 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_TARGET_PORT_MAPPING={'default': 5000, 'grpc': 50052} (default is set in config.py, used by app.py)
+2026-06-25 21:13:08 [run-workloads] __main__ - INFO - Started workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005 pid=20
+2026-06-25 21:13:08 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_CONTROLLER_HOST=127.0.0.1 WDM_CONTROLLER_PORT=5003 (WDM_ENVOY_DASHBOARD_PROXY enabled)
+2026-06-25 21:13:08 [run-workloads] __main__ - INFO - Started workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004 pid=22
+2026-06-25 21:13:08 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_XDS_USE_POD_DNS=False WDM_XDS_USE_IP_ADDRESS=True
+2026-06-25 21:13:08 [run-workloads] lib.xDS.envoyxDS - INFO - redis connected
+2026-06-25 21:13:08 [run-workloads] werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.65.3:5003
+2026-06-25 21:13:08 [run-workloads] werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-25 21:13:26 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.063114
+2026-06-25 21:13:26 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:13:26] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:13:47 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.268523
+2026-06-25 21:13:47 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:13:47] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:14:17 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.036313
+2026-06-25 21:14:17 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:14:17] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:14:36 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.118665
+2026-06-25 21:14:36 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:14:36] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:14:53 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.032884
+2026-06-25 21:14:53 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:14:53] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:15:20 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.044868
+2026-06-25 21:15:20 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:15:20] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:15:48 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.029009
+2026-06-25 21:15:48 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:15:48] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:16:11 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.062441
+2026-06-25 21:16:11 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:16:11] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:16:40 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.026661
+2026-06-25 21:16:40 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:16:40] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:17:04 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.029782
+2026-06-25 21:17:04 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:17:04] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:17:32 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.027339
+2026-06-25 21:17:32 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:17:32] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:18:04 [run-workloads] lib.messaging.redisMessaging - INFO - connected to redis 127.0.0.1  port 6379
+2026-06-25 21:18:04 [run-workloads] lib.controller - INFO - pod watcher thread started
+2026-06-25 21:18:04 [run-workloads] lib.controller - INFO - Subscribing to channels: wdm_error_events
+2026-06-25 21:18:04 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: worker restart_on_nonzero=True delay_s=3.0
+2026-06-25 21:18:04 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: worker restart_on_nonzero=True delay_s=3.0
+2026-06-25 21:18:04 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_SERVER=127.0.0.1 (from env)
+2026-06-25 21:18:04 [run-workloads] lib.controller - INFO - Starting Redis pub/sub listener
+2026-06-25 21:18:04 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-25 21:18:04 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-25 21:18:04 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_PORT=6379 (from env)
+2026-06-25 21:18:04 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing': worker subprocess stdout/stderr → /logs/worker-docker-workload-streamprocessing-vss-vios-streamprocessing-4005.log and parent stdout
+2026-06-25 21:18:04 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt': worker subprocess stdout/stderr → /logs/worker-docker-workload-rtvi-cv-mv3dt-vss-rtvi-cv-mv3dt-4004.log and parent stdout
+2026-06-25 21:18:04 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_TARGET_PORT_MAPPING={'default': 5000, 'grpc': 50052} (default is set in config.py, used by app.py)
+2026-06-25 21:18:04 [run-workloads] __main__ - INFO - Started workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005 pid=21
+2026-06-25 21:18:04 [run-workloads] __main__ - INFO - Started workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004 pid=23
+2026-06-25 21:18:04 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_CONTROLLER_HOST=127.0.0.1 WDM_CONTROLLER_PORT=5003 (WDM_ENVOY_DASHBOARD_PROXY enabled)
+2026-06-25 21:18:04 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_XDS_USE_POD_DNS=False WDM_XDS_USE_IP_ADDRESS=True
+2026-06-25 21:18:04 [run-workloads] lib.xDS.envoyxDS - INFO - redis connected
+2026-06-25 21:18:04 [run-workloads] werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.65.3:5003
+2026-06-25 21:18:04 [run-workloads] werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-25 21:18:29 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.069776
+2026-06-25 21:18:29 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:18:29] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:18:48 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.031169
+2026-06-25 21:18:48 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:18:48] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:19:14 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.037732
+2026-06-25 21:19:14 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:19:14] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:19:32 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.036241
+2026-06-25 21:19:32 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:19:32] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:19:49 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.043758
+2026-06-25 21:19:49 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:19:49] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:20:19 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.023936
+2026-06-25 21:20:19 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:20:19] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:20:43 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.027693
+2026-06-25 21:20:43 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:20:43] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:21:00 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.037024
+2026-06-25 21:21:00 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:21:00] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:21:15 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.049543
+2026-06-25 21:21:15 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:21:15] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:21:33 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.052411
+2026-06-25 21:21:33 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:21:33] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:21:50 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.023583
+2026-06-25 21:21:50 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:21:50] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:22:10 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.041225
+2026-06-25 21:22:10 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:22:10] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:22:33 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.045201
+2026-06-25 21:22:33 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:22:33] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:22:56 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.025680
+2026-06-25 21:22:56 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:22:56] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:23:18 [run-workloads] lib.messaging.redisMessaging - INFO - connected to redis 127.0.0.1  port 6379
+2026-06-25 21:23:18 [run-workloads] lib.controller - INFO - pod watcher thread started
+2026-06-25 21:23:18 [run-workloads] lib.controller - INFO - Subscribing to channels: wdm_error_events
+2026-06-25 21:23:18 [run-workloads] lib.controller - INFO - Starting Redis pub/sub listener
+2026-06-25 21:23:18 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: worker restart_on_nonzero=True delay_s=3.0
+2026-06-25 21:23:18 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_SERVER=127.0.0.1 (from env)
+2026-06-25 21:23:18 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: worker restart_on_nonzero=True delay_s=3.0
+2026-06-25 21:23:18 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-25 21:23:18 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_PORT=6379 (from env)
+2026-06-25 21:23:18 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-25 21:23:18 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing': worker subprocess stdout/stderr → /logs/worker-docker-workload-streamprocessing-vss-vios-streamprocessing-4005.log and parent stdout
+2026-06-25 21:23:18 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_TARGET_PORT_MAPPING={'default': 5000, 'grpc': 50052} (default is set in config.py, used by app.py)
+2026-06-25 21:23:18 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt': worker subprocess stdout/stderr → /logs/worker-docker-workload-rtvi-cv-mv3dt-vss-rtvi-cv-mv3dt-4004.log and parent stdout
+2026-06-25 21:23:18 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_CONTROLLER_HOST=127.0.0.1 WDM_CONTROLLER_PORT=5003 (WDM_ENVOY_DASHBOARD_PROXY enabled)
+2026-06-25 21:23:18 [run-workloads] __main__ - INFO - Started workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005 pid=20
+2026-06-25 21:23:18 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_XDS_USE_POD_DNS=False WDM_XDS_USE_IP_ADDRESS=True
+2026-06-25 21:23:18 [run-workloads] __main__ - INFO - Started workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004 pid=22
+2026-06-25 21:23:18 [run-workloads] lib.xDS.envoyxDS - INFO - redis connected
+2026-06-25 21:23:18 [run-workloads] werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.65.3:5003
+2026-06-25 21:23:18 [run-workloads] werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-25 21:23:32 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.062526
+2026-06-25 21:23:32 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:23:32] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:23:48 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.049417
+2026-06-25 21:23:48 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:23:48] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:24:17 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.025919
+2026-06-25 21:24:17 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:24:17] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:24:38 [run-workloads] lib.messaging.redisMessaging - INFO - connected to redis 127.0.0.1  port 6379
+2026-06-25 21:24:38 [run-workloads] lib.controller - INFO - pod watcher thread started
+2026-06-25 21:24:38 [run-workloads] lib.controller - INFO - Subscribing to channels: wdm_error_events
+2026-06-25 21:24:38 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: worker restart_on_nonzero=True delay_s=3.0
+2026-06-25 21:24:38 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: worker restart_on_nonzero=True delay_s=3.0
+2026-06-25 21:24:38 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_SERVER=127.0.0.1 (from env)
+2026-06-25 21:24:38 [run-workloads] lib.controller - INFO - Starting Redis pub/sub listener
+2026-06-25 21:24:38 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-25 21:24:38 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-25 21:24:38 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_PORT=6379 (from env)
+2026-06-25 21:24:38 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing': worker subprocess stdout/stderr → /logs/worker-docker-workload-streamprocessing-vss-vios-streamprocessing-4005.log and parent stdout
+2026-06-25 21:24:38 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt': worker subprocess stdout/stderr → /logs/worker-docker-workload-rtvi-cv-mv3dt-vss-rtvi-cv-mv3dt-4004.log and parent stdout
+2026-06-25 21:24:38 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_TARGET_PORT_MAPPING={'default': 5000, 'grpc': 50052} (default is set in config.py, used by app.py)
+2026-06-25 21:24:38 [run-workloads] __main__ - INFO - Started workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005 pid=20
+2026-06-25 21:24:38 [run-workloads] __main__ - INFO - Started workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004 pid=22
+2026-06-25 21:24:38 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_CONTROLLER_HOST=127.0.0.1 WDM_CONTROLLER_PORT=5003 (WDM_ENVOY_DASHBOARD_PROXY enabled)
+2026-06-25 21:24:38 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_XDS_USE_POD_DNS=False WDM_XDS_USE_IP_ADDRESS=True
+2026-06-25 21:24:38 [run-workloads] lib.xDS.envoyxDS - INFO - redis connected
+2026-06-25 21:24:38 [run-workloads] werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.65.3:5003
+2026-06-25 21:24:38 [run-workloads] werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-25 21:24:53 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.061645
+2026-06-25 21:24:53 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:24:53] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:25:16 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.033828
+2026-06-25 21:25:16 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:25:16] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:25:35 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.028687
+2026-06-25 21:25:35 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:25:35] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:25:56 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.027039
+2026-06-25 21:25:56 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:25:56] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:26:24 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.028132
+2026-06-25 21:26:24 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:26:24] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:26:48 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.028279
+2026-06-25 21:26:48 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:26:48] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:27:16 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.036965
+2026-06-25 21:27:16 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:27:16] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:27:33 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.025088
+2026-06-25 21:27:33 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:27:33] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:27:48 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.023838
+2026-06-25 21:27:48 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:27:48] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:28:13 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.025039
+2026-06-25 21:28:13 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:28:13] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:28:32 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.036352
+2026-06-25 21:28:32 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:28:32] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:28:52 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.035289
+2026-06-25 21:28:52 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:28:52] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:29:12 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.026374
+2026-06-25 21:29:12 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:29:12] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:29:40 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.024853
+2026-06-25 21:29:40 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:29:40] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:30:08 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.029372
+2026-06-25 21:30:08 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:30:08] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:30:30 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.041573
+2026-06-25 21:30:30 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:30:30] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:30:49 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.028215
+2026-06-25 21:30:49 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:30:49] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:31:10 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.020929
+2026-06-25 21:31:10 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:31:10] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:31:38 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.025038
+2026-06-25 21:31:38 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:31:38] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:32:03 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.026144
+2026-06-25 21:32:03 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:32:03] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:32:30 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.038282
+2026-06-25 21:32:30 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:32:30] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:32:53 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.028315
+2026-06-25 21:32:53 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:32:53] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:33:13 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.025193
+2026-06-25 21:33:13 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:33:13] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:33:43 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.037286
+2026-06-25 21:33:43 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:33:43] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:34:08 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.039164
+2026-06-25 21:34:08 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:34:08] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:34:36 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.026732
+2026-06-25 21:34:36 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:34:36] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:34:52 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.035617
+2026-06-25 21:34:52 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:34:52] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:35:17 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.038225
+2026-06-25 21:35:17 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:35:17] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:35:33 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.058009
+2026-06-25 21:35:33 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:35:33] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:35:56 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.023101
+2026-06-25 21:35:56 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:35:56] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:36:24 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.031408
+2026-06-25 21:36:24 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:36:24] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:36:45 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.025077
+2026-06-25 21:36:45 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:36:45] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:37:10 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.025672
+2026-06-25 21:37:10 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:37:10] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:37:29 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.037926
+2026-06-25 21:37:29 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:37:29] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:37:52 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.022858
+2026-06-25 21:37:52 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:37:52] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:38:10 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.031665
+2026-06-25 21:38:10 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:38:10] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:38:33 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.026902
+2026-06-25 21:38:33 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:38:33] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:38:49 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.025040
+2026-06-25 21:38:49 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:38:49] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:41:17 [run-workloads] lib.messaging.redisMessaging - INFO - connected to redis 127.0.0.1  port 6379
+2026-06-25 21:41:17 [run-workloads] lib.controller - INFO - pod watcher thread started
+2026-06-25 21:41:17 [run-workloads] lib.controller - INFO - Subscribing to channels: wdm_error_events
+2026-06-25 21:41:17 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: worker restart_on_nonzero=True delay_s=3.0
+2026-06-25 21:41:17 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: worker restart_on_nonzero=True delay_s=3.0
+2026-06-25 21:41:17 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_SERVER=127.0.0.1 (from env)
+2026-06-25 21:41:17 [run-workloads] lib.controller - INFO - Starting Redis pub/sub listener
+2026-06-25 21:41:17 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-25 21:41:17 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-25 21:41:17 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_PORT=6379 (from env)
+2026-06-25 21:41:17 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing': worker subprocess stdout/stderr → /logs/worker-docker-workload-streamprocessing-vss-vios-streamprocessing-4005.log and parent stdout
+2026-06-25 21:41:17 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt': worker subprocess stdout/stderr → /logs/worker-docker-workload-rtvi-cv-mv3dt-vss-rtvi-cv-mv3dt-4004.log and parent stdout
+2026-06-25 21:41:17 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_TARGET_PORT_MAPPING={'default': 5000, 'grpc': 50052} (default is set in config.py, used by app.py)
+2026-06-25 21:41:17 [run-workloads] __main__ - INFO - Started workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005 pid=20
+2026-06-25 21:41:17 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_CONTROLLER_HOST=127.0.0.1 WDM_CONTROLLER_PORT=5003 (WDM_ENVOY_DASHBOARD_PROXY enabled)
+2026-06-25 21:41:17 [run-workloads] __main__ - INFO - Started workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004 pid=22
+2026-06-25 21:41:17 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_XDS_USE_POD_DNS=False WDM_XDS_USE_IP_ADDRESS=True
+2026-06-25 21:41:17 [run-workloads] lib.xDS.envoyxDS - INFO - redis connected
+2026-06-25 21:41:17 [run-workloads] werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.65.3:5003
+2026-06-25 21:41:17 [run-workloads] werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-25 21:41:41 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.069822
+2026-06-25 21:41:41 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:41:41] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:42:01 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.046738
+2026-06-25 21:42:01 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:42:01] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:42:19 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.031272
+2026-06-25 21:42:19 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:42:19] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:42:48 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.031964
+2026-06-25 21:42:48 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:42:48] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:43:12 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.028919
+2026-06-25 21:43:12 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:43:12] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:43:30 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.030353
+2026-06-25 21:43:30 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:43:30] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:43:52 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.029523
+2026-06-25 21:43:52 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:43:52] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:44:17 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.030520
+2026-06-25 21:44:17 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:44:17] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:44:38 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.024596
+2026-06-25 21:44:38 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:44:38] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:45:08 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.028773
+2026-06-25 21:45:08 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:45:08] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:45:25 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.028699
+2026-06-25 21:45:25 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:45:25] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:45:45 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.044399
+2026-06-25 21:45:45 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:45:45] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:46:12 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.030499
+2026-06-25 21:46:12 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:46:12] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:46:28 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.047398
+2026-06-25 21:46:28 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:46:28] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:46:58 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.027872
+2026-06-25 21:46:58 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:46:58] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:47:16 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.026828
+2026-06-25 21:47:16 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:47:16] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:47:34 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.029230
+2026-06-25 21:47:34 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:47:34] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:47:50 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.058129
+2026-06-25 21:47:50 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:47:50] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:48:14 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.025015
+2026-06-25 21:48:14 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:48:14] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:48:35 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.025386
+2026-06-25 21:48:35 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:48:35] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:48:52 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.050131
+2026-06-25 21:48:52 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:48:52] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:49:13 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.032722
+2026-06-25 21:49:13 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:49:13] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:49:31 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.030793
+2026-06-25 21:49:31 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:49:31] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:49:55 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.027832
+2026-06-25 21:49:55 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:49:55] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:50:11 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.044310
+2026-06-25 21:50:11 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:50:11] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:50:34 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.030145
+2026-06-25 21:50:34 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:50:34] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:51:02 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.026016
+2026-06-25 21:51:02 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:51:02] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:51:20 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.045119
+2026-06-25 21:51:20 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:51:20] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:51:39 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.032351
+2026-06-25 21:51:39 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:51:39] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:51:57 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.026525
+2026-06-25 21:51:57 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:51:57] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:52:24 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.024290
+2026-06-25 21:52:24 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:52:24] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:52:49 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.031932
+2026-06-25 21:52:49 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:52:49] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:53:13 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.027348
+2026-06-25 21:53:13 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:53:13] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:53:35 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.043123
+2026-06-25 21:53:35 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:53:35] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:53:52 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.031452
+2026-06-25 21:53:52 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:53:52] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:54:21 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.041618
+2026-06-25 21:54:21 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:54:21] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:54:30 [run-workloads] lib.controller - INFO - Received reprovision message: {'wlobject': 'vss-rtvi-cv-mv3dt', 'podname': 'vss-rtvi-cv-mv3dt', 'timestamp': '2026-06-25T21:54:30.962476Z', 'status': 'down', 'ids': ['9844ec83-42a4-49c6-a2fa-77e3772fd78e', '77e97fa2-7f10-4495-985f-e6f176b36e04', 'ea4df723-7cec-4bdf-8bfa-069aae035bf7', '80684c07-98fe-4a22-b176-8a561712c9cc', '9e4098fb-347a-4177-a802-e09f469fc2bf', '5922bdef-a906-459a-a976-6f79110645f6', '3caf136a-dde7-46d0-9348-20fc5450fb89', 'fcedcb55-fd74-4846-9ea1-e377a1aba649', '96cedff4-6bd1-4905-9117-f860c4c5b3a4', '7469b089-6f48-468c-9ddc-b038d0c1df18', '99c27ac8-4c3e-4f6d-9d14-d94cb74575b5', '37a8b9ed-85f3-45e0-87dd-486502e36afa', '2df00324-ed07-4b0a-b2ca-3e8c03c918fe', 'b61128c3-ca7e-4999-8f83-df1d8449672c', 'fc21211b-dc32-4da3-bec3-3ceb05a049fc', '9436a923-ecc6-46f2-b2de-9968e2001e8c', '72ee48c2-8d0d-42be-8e95-1900fd9f8150', '11a7b469-819b-4e75-903d-1b6117a87eb9', '741f56e9-a316-46cc-b3b0-ff33e4fb51d7', '116dcd97-5b91-4f8d-825b-488299df6e70', 'fb97ee3f-2421-4439-829b-060d8aed8778', 'e51afe0a-fbec-4105-bd4c-d2714d54b2bb', 'c6db5575-3a1b-42be-8cf6-ffaedfdc4a5a', '03836e9d-ef6b-4b7c-a6df-26bb61922328', '1cdb3b17-2363-44e9-80d3-7c8cd1cebd6a', 'cabbf07f-253e-4e6e-8d50-4fb00528990c', 'ef8dc1cb-8b02-4c89-9935-d87d12eec7a2', '9203df16-0a4a-4c39-9649-a5741f1e67e1', '62caf835-01ca-4525-91ad-d4b26d289a73', 'f0fa2150-4c97-41cf-b0df-f88950419b4a', 'd5442c44-a0d2-4ce2-b815-10e22674ef2e', '5ce3f13c-0a30-4aa0-bc6e-7b41d3ca2a71', '39105ff0-b39f-4561-be9c-363e833044c0', '422007d1-9d2f-425d-a79f-a8037db0730a', 'e2690969-2273-469c-90cd-5c2e8397a60e', '7dae87be-a80f-40f1-80ac-e1b9291d9703', 'b6c789d4-77c3-4308-bc2f-71516fa9cf20', '198f332d-96c9-495c-80d6-7ace6f46c861', '721f0388-e2e7-47ca-b124-6ead50938b73', 'bb59c5d5-92f6-4a83-9472-af6e59df2edc', '1ea0031c-1e2c-4645-a2db-84fb1483c84d', 'b3e6d3ba-c0b1-4377-82a2-613bf0042653', '9fe7043a-8345-47c1-b25b-5c78a981350a', '4eea00a7-280d-44bb-9842-38a6d4dc8cbb', '8000a4aa-2a56-4efe-bef9-e2a9a3ef12cd', '5f3a61b6-e0ae-4925-a4bb-fc84d4cc07e2', 'ceac7265-d388-4812-936e-361c0f295d9b', '2b918d7f-22b8-4dd8-a634-cbd697a30dc0', '3f878d5a-038e-458d-bfce-c99c68049081', '52dc712f-047e-42c6-840b-45dd4d76cab8', '630a664e-fe3e-43f6-869c-dd21e706222e', '84e7569d-7b96-4627-a2b8-210e71b4df03', 'af0d0ffa-16d6-4373-b078-57306569a571', 'c22bbff9-9d64-4b8a-8e27-71272c53fb3c', 'cfdbdff4-c62e-4395-9ab2-aa53be2e8903', '6c6f4227-b220-4599-9984-f7db678a2c10', '6a54f0d8-dc92-4e3a-9c9c-ab8957246e8e', '8fee13d8-1e45-49af-82e5-f384e2c1f922', '9b015fda-31e2-4ddf-881b-2198650977b1', '0d4b0431-b076-43ba-8124-ea6cb4a05241', '3b2798e9-eb2a-4206-a74a-46039e5d2591'], 'type': 'reprovision', 'event_field': 'event', 'msg_key': 'vst.event', 'redis_msg_field': 'sensor.id', 'payload': [{'alert_type': 'camera_status_change', 'created_at': '2026-06-25T21:42:07Z', 'event': {'camera_id': '23f2b05e-91cf-4561-a423-2f60b68f441f', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:30556/live/23f2b05e-91cf-4561-a423-2f60b68f441f', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/23f2b05e-91cf-4561-a423-2f60b68f441f', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T21:42:07Z', 'event': {'camera_id': '8beeb0fb-ce65-4e1f-bea3-339dc73423d7', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:30555/live/8beeb0fb-ce65-4e1f-bea3-339dc73423d7', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/8beeb0fb-ce65-4e1f-bea3-339dc73423d7', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T21:42:07Z', 'event': {'camera_id': 'bb9d122d-6841-4e49-b297-d5ef2b1e8479', 'camera_name': 'Camera', 'camera_url': 'rtsp://192.168.65.6:30554/live/bb9d122d-6841-4e49-b297-d5ef2b1e8479', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/bb9d122d-6841-4e49-b297-d5ef2b1e8479', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T21:42:07Z', 'event': {'camera_id': '2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'camera_name': 'Camera_03', 'camera_url': 'rtsp://192.168.65.6:30557/live/2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}]}
+2026-06-25 21:54:30 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '23f2b05e-91cf-4561-a423-2f60b68f441f', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:30556/live/23f2b05e-91cf-4561-a423-2f60b68f441f', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/23f2b05e-91cf-4561-a423-2f60b68f441f', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 21:54:30 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '8beeb0fb-ce65-4e1f-bea3-339dc73423d7', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:30555/live/8beeb0fb-ce65-4e1f-bea3-339dc73423d7', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/8beeb0fb-ce65-4e1f-bea3-339dc73423d7', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 21:54:30 [run-workloads] lib.controller - INFO - data_json: {'camera_id': 'bb9d122d-6841-4e49-b297-d5ef2b1e8479', 'camera_name': 'Camera', 'camera_url': 'rtsp://192.168.65.6:30554/live/bb9d122d-6841-4e49-b297-d5ef2b1e8479', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/bb9d122d-6841-4e49-b297-d5ef2b1e8479', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 21:54:30 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'camera_name': 'Camera_03', 'camera_url': 'rtsp://192.168.65.6:30557/live/2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 21:54:30 [run-workloads] lib.controller - INFO - Reprovision forwarded 4/4 events to stream 'vst.event'
+2026-06-25 21:54:47 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.027422
+2026-06-25 21:54:47 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:54:47] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:54:56 [run-workloads] lib.controller - INFO - Received reprovision message: {'wlobject': 'vss-vios-streamprocessing', 'podname': 'vss-vios-streamprocessing', 'timestamp': '2026-06-25T21:54:56.157097Z', 'status': 'down', 'ids': ['ea4df723-7cec-4bdf-8bfa-069aae035bf7', '80684c07-98fe-4a22-b176-8a561712c9cc', '9844ec83-42a4-49c6-a2fa-77e3772fd78e', '77e97fa2-7f10-4495-985f-e6f176b36e04', 'fcedcb55-fd74-4846-9ea1-e377a1aba649', '9e4098fb-347a-4177-a802-e09f469fc2bf', '5922bdef-a906-459a-a976-6f79110645f6', '3caf136a-dde7-46d0-9348-20fc5450fb89', '96cedff4-6bd1-4905-9117-f860c4c5b3a4', '7469b089-6f48-468c-9ddc-b038d0c1df18', '37a8b9ed-85f3-45e0-87dd-486502e36afa', '99c27ac8-4c3e-4f6d-9d14-d94cb74575b5', '2df00324-ed07-4b0a-b2ca-3e8c03c918fe', 'b61128c3-ca7e-4999-8f83-df1d8449672c', 'fc21211b-dc32-4da3-bec3-3ceb05a049fc', '9436a923-ecc6-46f2-b2de-9968e2001e8c', '11a7b469-819b-4e75-903d-1b6117a87eb9', '72ee48c2-8d0d-42be-8e95-1900fd9f8150', '741f56e9-a316-46cc-b3b0-ff33e4fb51d7', '116dcd97-5b91-4f8d-825b-488299df6e70', 'fb97ee3f-2421-4439-829b-060d8aed8778', 'e51afe0a-fbec-4105-bd4c-d2714d54b2bb', 'c6db5575-3a1b-42be-8cf6-ffaedfdc4a5a', '03836e9d-ef6b-4b7c-a6df-26bb61922328', '1cdb3b17-2363-44e9-80d3-7c8cd1cebd6a', 'cabbf07f-253e-4e6e-8d50-4fb00528990c', '9203df16-0a4a-4c39-9649-a5741f1e67e1', 'ef8dc1cb-8b02-4c89-9935-d87d12eec7a2', '62caf835-01ca-4525-91ad-d4b26d289a73', '5ce3f13c-0a30-4aa0-bc6e-7b41d3ca2a71', 'd5442c44-a0d2-4ce2-b815-10e22674ef2e', 'f0fa2150-4c97-41cf-b0df-f88950419b4a', '39105ff0-b39f-4561-be9c-363e833044c0', 'e2690969-2273-469c-90cd-5c2e8397a60e', '7dae87be-a80f-40f1-80ac-e1b9291d9703', '422007d1-9d2f-425d-a79f-a8037db0730a', 'b6c789d4-77c3-4308-bc2f-71516fa9cf20', '198f332d-96c9-495c-80d6-7ace6f46c861', '1ea0031c-1e2c-4645-a2db-84fb1483c84d', '721f0388-e2e7-47ca-b124-6ead50938b73', 'bb59c5d5-92f6-4a83-9472-af6e59df2edc', 'b3e6d3ba-c0b1-4377-82a2-613bf0042653', '9fe7043a-8345-47c1-b25b-5c78a981350a', '4eea00a7-280d-44bb-9842-38a6d4dc8cbb', '8000a4aa-2a56-4efe-bef9-e2a9a3ef12cd', '5f3a61b6-e0ae-4925-a4bb-fc84d4cc07e2', 'ceac7265-d388-4812-936e-361c0f295d9b', '3f878d5a-038e-458d-bfce-c99c68049081', '2b918d7f-22b8-4dd8-a634-cbd697a30dc0', '52dc712f-047e-42c6-840b-45dd4d76cab8', '84e7569d-7b96-4627-a2b8-210e71b4df03', '630a664e-fe3e-43f6-869c-dd21e706222e', 'af0d0ffa-16d6-4373-b078-57306569a571', 'c22bbff9-9d64-4b8a-8e27-71272c53fb3c', '6a54f0d8-dc92-4e3a-9c9c-ab8957246e8e', 'cfdbdff4-c62e-4395-9ab2-aa53be2e8903', '6c6f4227-b220-4599-9984-f7db678a2c10', '9b015fda-31e2-4ddf-881b-2198650977b1', '8fee13d8-1e45-49af-82e5-f384e2c1f922', '0d4b0431-b076-43ba-8124-ea6cb4a05241', '3b2798e9-eb2a-4206-a74a-46039e5d2591', '2d2852ca-b3d2-4a90-a70f-56c842802658', '1b3351d0-4657-40d0-bc85-6adef1b752e1', '07425196-1f8b-4461-9d55-073696f8afd1', 'f797b57e-4a2e-4cf9-838a-c8de0d3557c3', 'd4f99efd-943c-4a31-9358-1fc9dbb40b96', '31018a6b-532b-4212-9d86-c8d927411ab4', 'b27d00eb-34de-46c1-9f4b-0b26e66e1200', '11ff114d-796f-4202-94fb-aa1850b5e23e', '6556c1c5-ebd3-40f8-8c85-3c018eceb330', '593ee6d2-5dee-49b3-b4ef-894e5ca4814c', 'bb9d122d-6841-4e49-b297-d5ef2b1e8479', '8beeb0fb-ce65-4e1f-bea3-339dc73423d7', '23f2b05e-91cf-4561-a423-2f60b68f441f', '2af727df-9ac6-4d08-9d4f-7af770f9e5eb'], 'type': 'reprovision', 'event_field': 'event', 'msg_key': 'vst.event', 'redis_msg_field': 'sensor.id', 'payload': [{'alert_type': 'camera_status_change', 'created_at': '2026-06-25T21:41:57Z', 'event': {'camera_id': 'bb9d122d-6841-4e49-b297-d5ef2b1e8479', 'camera_name': 'Camera', 'camera_url': 'rtsp://192.168.65.6:31554/nvstream/tmp/nv_streamer/videos/Camera.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T21:41:57Z', 'event': {'camera_id': '8beeb0fb-ce65-4e1f-bea3-339dc73423d7', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:31555/nvstream/tmp/nv_streamer/videos/Camera_01.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T21:41:57Z', 'event': {'camera_id': '23f2b05e-91cf-4561-a423-2f60b68f441f', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:31556/nvstream/tmp/nv_streamer/videos/Camera_02.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T21:41:57Z', 'event': {'camera_id': '2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'camera_name': 'Camera_03', 'camera_url': 'rtsp://192.168.65.6:31557/nvstream/tmp/nv_streamer/videos/Camera_03.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}]}
+2026-06-25 21:54:56 [run-workloads] lib.controller - INFO - data_json: {'camera_id': 'bb9d122d-6841-4e49-b297-d5ef2b1e8479', 'camera_name': 'Camera', 'camera_url': 'rtsp://192.168.65.6:31554/nvstream/tmp/nv_streamer/videos/Camera.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 21:54:56 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '8beeb0fb-ce65-4e1f-bea3-339dc73423d7', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:31555/nvstream/tmp/nv_streamer/videos/Camera_01.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 21:54:56 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '23f2b05e-91cf-4561-a423-2f60b68f441f', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:31556/nvstream/tmp/nv_streamer/videos/Camera_02.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 21:54:56 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'camera_name': 'Camera_03', 'camera_url': 'rtsp://192.168.65.6:31557/nvstream/tmp/nv_streamer/videos/Camera_03.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 21:54:56 [run-workloads] lib.controller - INFO - Reprovision forwarded 4/4 events to stream 'vst.event'
+2026-06-25 21:55:00 [run-workloads] lib.controller - INFO - Received reprovision message: {'wlobject': 'vss-rtvi-cv-mv3dt', 'podname': 'vss-rtvi-cv-mv3dt', 'timestamp': '2026-06-25T21:55:00.257077Z', 'status': 'down', 'ids': ['9844ec83-42a4-49c6-a2fa-77e3772fd78e', '77e97fa2-7f10-4495-985f-e6f176b36e04', 'ea4df723-7cec-4bdf-8bfa-069aae035bf7', '80684c07-98fe-4a22-b176-8a561712c9cc', '9e4098fb-347a-4177-a802-e09f469fc2bf', '5922bdef-a906-459a-a976-6f79110645f6', '3caf136a-dde7-46d0-9348-20fc5450fb89', 'fcedcb55-fd74-4846-9ea1-e377a1aba649', '96cedff4-6bd1-4905-9117-f860c4c5b3a4', '7469b089-6f48-468c-9ddc-b038d0c1df18', '99c27ac8-4c3e-4f6d-9d14-d94cb74575b5', '37a8b9ed-85f3-45e0-87dd-486502e36afa', '2df00324-ed07-4b0a-b2ca-3e8c03c918fe', 'b61128c3-ca7e-4999-8f83-df1d8449672c', 'fc21211b-dc32-4da3-bec3-3ceb05a049fc', '9436a923-ecc6-46f2-b2de-9968e2001e8c', '72ee48c2-8d0d-42be-8e95-1900fd9f8150', '11a7b469-819b-4e75-903d-1b6117a87eb9', '741f56e9-a316-46cc-b3b0-ff33e4fb51d7', '116dcd97-5b91-4f8d-825b-488299df6e70', 'fb97ee3f-2421-4439-829b-060d8aed8778', 'e51afe0a-fbec-4105-bd4c-d2714d54b2bb', 'c6db5575-3a1b-42be-8cf6-ffaedfdc4a5a', '03836e9d-ef6b-4b7c-a6df-26bb61922328', '1cdb3b17-2363-44e9-80d3-7c8cd1cebd6a', 'cabbf07f-253e-4e6e-8d50-4fb00528990c', 'ef8dc1cb-8b02-4c89-9935-d87d12eec7a2', '9203df16-0a4a-4c39-9649-a5741f1e67e1', '62caf835-01ca-4525-91ad-d4b26d289a73', 'f0fa2150-4c97-41cf-b0df-f88950419b4a', 'd5442c44-a0d2-4ce2-b815-10e22674ef2e', '5ce3f13c-0a30-4aa0-bc6e-7b41d3ca2a71', '39105ff0-b39f-4561-be9c-363e833044c0', '422007d1-9d2f-425d-a79f-a8037db0730a', 'e2690969-2273-469c-90cd-5c2e8397a60e', '7dae87be-a80f-40f1-80ac-e1b9291d9703', 'b6c789d4-77c3-4308-bc2f-71516fa9cf20', '198f332d-96c9-495c-80d6-7ace6f46c861', '721f0388-e2e7-47ca-b124-6ead50938b73', 'bb59c5d5-92f6-4a83-9472-af6e59df2edc', '1ea0031c-1e2c-4645-a2db-84fb1483c84d', 'b3e6d3ba-c0b1-4377-82a2-613bf0042653', '9fe7043a-8345-47c1-b25b-5c78a981350a', '4eea00a7-280d-44bb-9842-38a6d4dc8cbb', '8000a4aa-2a56-4efe-bef9-e2a9a3ef12cd', '5f3a61b6-e0ae-4925-a4bb-fc84d4cc07e2', 'ceac7265-d388-4812-936e-361c0f295d9b', '2b918d7f-22b8-4dd8-a634-cbd697a30dc0', '3f878d5a-038e-458d-bfce-c99c68049081', '52dc712f-047e-42c6-840b-45dd4d76cab8', '630a664e-fe3e-43f6-869c-dd21e706222e', '84e7569d-7b96-4627-a2b8-210e71b4df03', 'af0d0ffa-16d6-4373-b078-57306569a571', 'c22bbff9-9d64-4b8a-8e27-71272c53fb3c', 'cfdbdff4-c62e-4395-9ab2-aa53be2e8903', '6c6f4227-b220-4599-9984-f7db678a2c10', '6a54f0d8-dc92-4e3a-9c9c-ab8957246e8e', '8fee13d8-1e45-49af-82e5-f384e2c1f922', '9b015fda-31e2-4ddf-881b-2198650977b1', '0d4b0431-b076-43ba-8124-ea6cb4a05241', '3b2798e9-eb2a-4206-a74a-46039e5d2591'], 'type': 'reprovision', 'event_field': 'event', 'msg_key': 'vst.event', 'redis_msg_field': 'sensor.id', 'payload': [{'alert_type': 'camera_status_change', 'created_at': '2026-06-25T21:41:17Z', 'event': {'camera_id': '23f2b05e-91cf-4561-a423-2f60b68f441f', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:30556/live/23f2b05e-91cf-4561-a423-2f60b68f441f', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/23f2b05e-91cf-4561-a423-2f60b68f441f', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T21:41:17Z', 'event': {'camera_id': '8beeb0fb-ce65-4e1f-bea3-339dc73423d7', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:30555/live/8beeb0fb-ce65-4e1f-bea3-339dc73423d7', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/8beeb0fb-ce65-4e1f-bea3-339dc73423d7', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T21:41:17Z', 'event': {'camera_id': 'bb9d122d-6841-4e49-b297-d5ef2b1e8479', 'camera_name': 'Camera', 'camera_url': 'rtsp://192.168.65.6:30554/live/bb9d122d-6841-4e49-b297-d5ef2b1e8479', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/bb9d122d-6841-4e49-b297-d5ef2b1e8479', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T21:41:17Z', 'event': {'camera_id': '2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'camera_name': 'Camera_03', 'camera_url': 'rtsp://192.168.65.6:30557/live/2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}}]}
+2026-06-25 21:55:00 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '23f2b05e-91cf-4561-a423-2f60b68f441f', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:30556/live/23f2b05e-91cf-4561-a423-2f60b68f441f', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/23f2b05e-91cf-4561-a423-2f60b68f441f', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 21:55:00 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '8beeb0fb-ce65-4e1f-bea3-339dc73423d7', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:30555/live/8beeb0fb-ce65-4e1f-bea3-339dc73423d7', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/8beeb0fb-ce65-4e1f-bea3-339dc73423d7', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 21:55:00 [run-workloads] lib.controller - INFO - data_json: {'camera_id': 'bb9d122d-6841-4e49-b297-d5ef2b1e8479', 'camera_name': 'Camera', 'camera_url': 'rtsp://192.168.65.6:30554/live/bb9d122d-6841-4e49-b297-d5ef2b1e8479', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/bb9d122d-6841-4e49-b297-d5ef2b1e8479', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 21:55:00 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'camera_name': 'Camera_03', 'camera_url': 'rtsp://192.168.65.6:30557/live/2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 21:55:00 [run-workloads] lib.controller - INFO - Reprovision forwarded 4/4 events to stream 'vst.event'
+2026-06-25 21:55:02 [run-workloads] lib.controller - INFO - Received reprovision message: {'wlobject': 'vss-rtvi-cv-mv3dt', 'podname': 'vss-rtvi-cv-mv3dt', 'timestamp': '2026-06-25T21:55:02.788580Z', 'status': 'down', 'ids': ['9844ec83-42a4-49c6-a2fa-77e3772fd78e', '77e97fa2-7f10-4495-985f-e6f176b36e04', 'ea4df723-7cec-4bdf-8bfa-069aae035bf7', '80684c07-98fe-4a22-b176-8a561712c9cc', '9e4098fb-347a-4177-a802-e09f469fc2bf', '5922bdef-a906-459a-a976-6f79110645f6', '3caf136a-dde7-46d0-9348-20fc5450fb89', 'fcedcb55-fd74-4846-9ea1-e377a1aba649', '96cedff4-6bd1-4905-9117-f860c4c5b3a4', '7469b089-6f48-468c-9ddc-b038d0c1df18', '99c27ac8-4c3e-4f6d-9d14-d94cb74575b5', '37a8b9ed-85f3-45e0-87dd-486502e36afa', '2df00324-ed07-4b0a-b2ca-3e8c03c918fe', 'b61128c3-ca7e-4999-8f83-df1d8449672c', 'fc21211b-dc32-4da3-bec3-3ceb05a049fc', '9436a923-ecc6-46f2-b2de-9968e2001e8c', '72ee48c2-8d0d-42be-8e95-1900fd9f8150', '11a7b469-819b-4e75-903d-1b6117a87eb9', '741f56e9-a316-46cc-b3b0-ff33e4fb51d7', '116dcd97-5b91-4f8d-825b-488299df6e70', 'fb97ee3f-2421-4439-829b-060d8aed8778', 'e51afe0a-fbec-4105-bd4c-d2714d54b2bb', 'c6db5575-3a1b-42be-8cf6-ffaedfdc4a5a', '03836e9d-ef6b-4b7c-a6df-26bb61922328', '1cdb3b17-2363-44e9-80d3-7c8cd1cebd6a', 'cabbf07f-253e-4e6e-8d50-4fb00528990c', 'ef8dc1cb-8b02-4c89-9935-d87d12eec7a2', '9203df16-0a4a-4c39-9649-a5741f1e67e1', '62caf835-01ca-4525-91ad-d4b26d289a73', 'f0fa2150-4c97-41cf-b0df-f88950419b4a', 'd5442c44-a0d2-4ce2-b815-10e22674ef2e', '5ce3f13c-0a30-4aa0-bc6e-7b41d3ca2a71', '39105ff0-b39f-4561-be9c-363e833044c0', '422007d1-9d2f-425d-a79f-a8037db0730a', 'e2690969-2273-469c-90cd-5c2e8397a60e', '7dae87be-a80f-40f1-80ac-e1b9291d9703', 'b6c789d4-77c3-4308-bc2f-71516fa9cf20', '198f332d-96c9-495c-80d6-7ace6f46c861', '721f0388-e2e7-47ca-b124-6ead50938b73', 'bb59c5d5-92f6-4a83-9472-af6e59df2edc', '1ea0031c-1e2c-4645-a2db-84fb1483c84d', 'b3e6d3ba-c0b1-4377-82a2-613bf0042653', '9fe7043a-8345-47c1-b25b-5c78a981350a', '4eea00a7-280d-44bb-9842-38a6d4dc8cbb', '8000a4aa-2a56-4efe-bef9-e2a9a3ef12cd', '5f3a61b6-e0ae-4925-a4bb-fc84d4cc07e2', 'ceac7265-d388-4812-936e-361c0f295d9b', '2b918d7f-22b8-4dd8-a634-cbd697a30dc0', '3f878d5a-038e-458d-bfce-c99c68049081', '52dc712f-047e-42c6-840b-45dd4d76cab8', '630a664e-fe3e-43f6-869c-dd21e706222e', '84e7569d-7b96-4627-a2b8-210e71b4df03', 'af0d0ffa-16d6-4373-b078-57306569a571', 'c22bbff9-9d64-4b8a-8e27-71272c53fb3c', 'cfdbdff4-c62e-4395-9ab2-aa53be2e8903', '6c6f4227-b220-4599-9984-f7db678a2c10', '6a54f0d8-dc92-4e3a-9c9c-ab8957246e8e', '8fee13d8-1e45-49af-82e5-f384e2c1f922', '9b015fda-31e2-4ddf-881b-2198650977b1', '0d4b0431-b076-43ba-8124-ea6cb4a05241', '3b2798e9-eb2a-4206-a74a-46039e5d2591'], 'type': 'reprovision', 'event_field': 'event', 'msg_key': 'vst.event', 'redis_msg_field': 'sensor.id', 'payload': [{'alert_type': 'camera_status_change', 'created_at': '2026-06-25T21:41:17Z', 'event': {'camera_id': '8beeb0fb-ce65-4e1f-bea3-339dc73423d7', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:30555/live/8beeb0fb-ce65-4e1f-bea3-339dc73423d7', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/8beeb0fb-ce65-4e1f-bea3-339dc73423d7', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T21:41:17Z', 'event': {'camera_id': 'bb9d122d-6841-4e49-b297-d5ef2b1e8479', 'camera_name': 'Camera', 'camera_url': 'rtsp://192.168.65.6:30554/live/bb9d122d-6841-4e49-b297-d5ef2b1e8479', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/bb9d122d-6841-4e49-b297-d5ef2b1e8479', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T21:41:17Z', 'event': {'camera_id': '2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'camera_name': 'Camera_03', 'camera_url': 'rtsp://192.168.65.6:30557/live/2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}}]}
+2026-06-25 21:55:02 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '8beeb0fb-ce65-4e1f-bea3-339dc73423d7', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:30555/live/8beeb0fb-ce65-4e1f-bea3-339dc73423d7', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/8beeb0fb-ce65-4e1f-bea3-339dc73423d7', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 21:55:02 [run-workloads] lib.controller - INFO - data_json: {'camera_id': 'bb9d122d-6841-4e49-b297-d5ef2b1e8479', 'camera_name': 'Camera', 'camera_url': 'rtsp://192.168.65.6:30554/live/bb9d122d-6841-4e49-b297-d5ef2b1e8479', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/bb9d122d-6841-4e49-b297-d5ef2b1e8479', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 21:55:02 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'camera_name': 'Camera_03', 'camera_url': 'rtsp://192.168.65.6:30557/live/2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 21:55:02 [run-workloads] lib.controller - INFO - Reprovision forwarded 3/3 events to stream 'vst.event'
+2026-06-25 21:55:12 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.026772
+2026-06-25 21:55:12 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:55:12] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:55:39 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.031015
+2026-06-25 21:55:39 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:55:39] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:55:55 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.028593
+2026-06-25 21:55:55 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:55:55] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:56:20 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.029066
+2026-06-25 21:56:20 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:56:20] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:56:42 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.037210
+2026-06-25 21:56:42 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:56:42] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:57:09 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.047565
+2026-06-25 21:57:09 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:57:09] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:57:32 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.024868
+2026-06-25 21:57:32 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:57:32] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:57:48 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.025113
+2026-06-25 21:57:48 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:57:48] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:58:04 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.060443
+2026-06-25 21:58:04 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:58:04] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:58:27 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.068270
+2026-06-25 21:58:27 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:58:27] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:58:44 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.030992
+2026-06-25 21:58:44 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:58:44] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 21:59:04 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.055295
+2026-06-25 21:59:04 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 21:59:04] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:02:41 [run-workloads] lib.messaging.redisMessaging - INFO - connected to redis 127.0.0.1  port 6379
+2026-06-25 22:02:41 [run-workloads] lib.controller - INFO - pod watcher thread started
+2026-06-25 22:02:41 [run-workloads] lib.controller - INFO - Subscribing to channels: wdm_error_events
+2026-06-25 22:02:41 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: worker restart_on_nonzero=True delay_s=3.0
+2026-06-25 22:02:41 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: worker restart_on_nonzero=True delay_s=3.0
+2026-06-25 22:02:41 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_SERVER=127.0.0.1 (from env)
+2026-06-25 22:02:41 [run-workloads] lib.controller - INFO - Starting Redis pub/sub listener
+2026-06-25 22:02:41 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-25 22:02:41 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-25 22:02:41 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_PORT=6379 (from env)
+2026-06-25 22:02:41 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing': worker subprocess stdout/stderr → /logs/worker-docker-workload-streamprocessing-vss-vios-streamprocessing-4005.log and parent stdout
+2026-06-25 22:02:41 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt': worker subprocess stdout/stderr → /logs/worker-docker-workload-rtvi-cv-mv3dt-vss-rtvi-cv-mv3dt-4004.log and parent stdout
+2026-06-25 22:02:41 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_TARGET_PORT_MAPPING={'default': 5000, 'grpc': 50052} (default is set in config.py, used by app.py)
+2026-06-25 22:02:41 [run-workloads] __main__ - INFO - Started workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005 pid=20
+2026-06-25 22:02:41 [run-workloads] __main__ - INFO - Started workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004 pid=22
+2026-06-25 22:02:41 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_CONTROLLER_HOST=127.0.0.1 WDM_CONTROLLER_PORT=5003 (WDM_ENVOY_DASHBOARD_PROXY enabled)
+2026-06-25 22:02:41 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_XDS_USE_POD_DNS=False WDM_XDS_USE_IP_ADDRESS=True
+2026-06-25 22:02:41 [run-workloads] lib.xDS.envoyxDS - INFO - redis connected
+2026-06-25 22:02:41 [run-workloads] werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.65.3:5003
+2026-06-25 22:02:41 [run-workloads] werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-25 22:03:09 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.058885
+2026-06-25 22:03:09 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:03:09] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:03:10 [run-workloads] lib.controller - INFO - Received reprovision message: {'wlobject': 'vss-vios-streamprocessing', 'podname': 'vss-vios-streamprocessing', 'timestamp': '2026-06-25T22:03:10.903255Z', 'status': 'down', 'ids': ['ea4df723-7cec-4bdf-8bfa-069aae035bf7', '80684c07-98fe-4a22-b176-8a561712c9cc', '9844ec83-42a4-49c6-a2fa-77e3772fd78e', '77e97fa2-7f10-4495-985f-e6f176b36e04', 'fcedcb55-fd74-4846-9ea1-e377a1aba649', '9e4098fb-347a-4177-a802-e09f469fc2bf', '5922bdef-a906-459a-a976-6f79110645f6', '3caf136a-dde7-46d0-9348-20fc5450fb89', '96cedff4-6bd1-4905-9117-f860c4c5b3a4', '7469b089-6f48-468c-9ddc-b038d0c1df18', '37a8b9ed-85f3-45e0-87dd-486502e36afa', '99c27ac8-4c3e-4f6d-9d14-d94cb74575b5', '2df00324-ed07-4b0a-b2ca-3e8c03c918fe', 'b61128c3-ca7e-4999-8f83-df1d8449672c', 'fc21211b-dc32-4da3-bec3-3ceb05a049fc', '9436a923-ecc6-46f2-b2de-9968e2001e8c', '11a7b469-819b-4e75-903d-1b6117a87eb9', '72ee48c2-8d0d-42be-8e95-1900fd9f8150', '741f56e9-a316-46cc-b3b0-ff33e4fb51d7', '116dcd97-5b91-4f8d-825b-488299df6e70', 'fb97ee3f-2421-4439-829b-060d8aed8778', 'e51afe0a-fbec-4105-bd4c-d2714d54b2bb', 'c6db5575-3a1b-42be-8cf6-ffaedfdc4a5a', '03836e9d-ef6b-4b7c-a6df-26bb61922328', '1cdb3b17-2363-44e9-80d3-7c8cd1cebd6a', 'cabbf07f-253e-4e6e-8d50-4fb00528990c', '9203df16-0a4a-4c39-9649-a5741f1e67e1', 'ef8dc1cb-8b02-4c89-9935-d87d12eec7a2', '62caf835-01ca-4525-91ad-d4b26d289a73', '5ce3f13c-0a30-4aa0-bc6e-7b41d3ca2a71', 'd5442c44-a0d2-4ce2-b815-10e22674ef2e', 'f0fa2150-4c97-41cf-b0df-f88950419b4a', '39105ff0-b39f-4561-be9c-363e833044c0', 'e2690969-2273-469c-90cd-5c2e8397a60e', '7dae87be-a80f-40f1-80ac-e1b9291d9703', '422007d1-9d2f-425d-a79f-a8037db0730a', 'b6c789d4-77c3-4308-bc2f-71516fa9cf20', '198f332d-96c9-495c-80d6-7ace6f46c861', '1ea0031c-1e2c-4645-a2db-84fb1483c84d', '721f0388-e2e7-47ca-b124-6ead50938b73', 'bb59c5d5-92f6-4a83-9472-af6e59df2edc', 'b3e6d3ba-c0b1-4377-82a2-613bf0042653', '9fe7043a-8345-47c1-b25b-5c78a981350a', '4eea00a7-280d-44bb-9842-38a6d4dc8cbb', '8000a4aa-2a56-4efe-bef9-e2a9a3ef12cd', '5f3a61b6-e0ae-4925-a4bb-fc84d4cc07e2', 'ceac7265-d388-4812-936e-361c0f295d9b', '3f878d5a-038e-458d-bfce-c99c68049081', '2b918d7f-22b8-4dd8-a634-cbd697a30dc0', '52dc712f-047e-42c6-840b-45dd4d76cab8', '84e7569d-7b96-4627-a2b8-210e71b4df03', '630a664e-fe3e-43f6-869c-dd21e706222e', 'af0d0ffa-16d6-4373-b078-57306569a571', 'c22bbff9-9d64-4b8a-8e27-71272c53fb3c', '6a54f0d8-dc92-4e3a-9c9c-ab8957246e8e', 'cfdbdff4-c62e-4395-9ab2-aa53be2e8903', '6c6f4227-b220-4599-9984-f7db678a2c10', '9b015fda-31e2-4ddf-881b-2198650977b1', '8fee13d8-1e45-49af-82e5-f384e2c1f922', '0d4b0431-b076-43ba-8124-ea6cb4a05241', '3b2798e9-eb2a-4206-a74a-46039e5d2591', '2d2852ca-b3d2-4a90-a70f-56c842802658', '1b3351d0-4657-40d0-bc85-6adef1b752e1', '07425196-1f8b-4461-9d55-073696f8afd1', 'f797b57e-4a2e-4cf9-838a-c8de0d3557c3', 'd4f99efd-943c-4a31-9358-1fc9dbb40b96', '31018a6b-532b-4212-9d86-c8d927411ab4', 'b27d00eb-34de-46c1-9f4b-0b26e66e1200', '11ff114d-796f-4202-94fb-aa1850b5e23e', '6556c1c5-ebd3-40f8-8c85-3c018eceb330', '593ee6d2-5dee-49b3-b4ef-894e5ca4814c', 'bb9d122d-6841-4e49-b297-d5ef2b1e8479', '8beeb0fb-ce65-4e1f-bea3-339dc73423d7', '23f2b05e-91cf-4561-a423-2f60b68f441f', '2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'f0fb8eaa-12ae-4312-8fe9-baab03c82b64', '83e0f9db-5279-49fc-9dd6-2dbe0a34be07', '9cfbf703-280c-4354-95b1-512a5d73c196', '0c562a7d-ac2d-45ef-947a-7b718e09ad66', 'f4ed2ca3-1917-44dd-914b-404b1654fd83', '3df1fb25-f6cb-4623-9046-dc3201dfa0fb', '5a935576-b30d-4857-8ff3-9ac9468d2ff9', '6b413e63-2d81-4c7b-9248-5941505912f4'], 'type': 'reprovision', 'event_field': 'event', 'msg_key': 'vst.event', 'redis_msg_field': 'sensor.id', 'payload': [{'alert_type': 'camera_status_change', 'created_at': '2026-06-25T22:03:05Z', 'event': {'camera_id': 'f4ed2ca3-1917-44dd-914b-404b1654fd83', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:31555/nvstream/tmp/nv_streamer/videos/Camera_01.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T22:03:05Z', 'event': {'camera_id': '3df1fb25-f6cb-4623-9046-dc3201dfa0fb', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:31556/nvstream/tmp/nv_streamer/videos/Camera_02.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T22:03:06Z', 'event': {'camera_id': '5a935576-b30d-4857-8ff3-9ac9468d2ff9', 'camera_name': 'Camera_03', 'camera_url': 'rtsp://192.168.65.6:31557/nvstream/tmp/nv_streamer/videos/Camera_03.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T22:03:06Z', 'event': {'camera_id': '6b413e63-2d81-4c7b-9248-5941505912f4', 'camera_name': 'Camera', 'camera_url': 'rtsp://192.168.65.6:31554/nvstream/tmp/nv_streamer/videos/Camera.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}]}
+2026-06-25 22:03:10 [run-workloads] lib.controller - INFO - data_json: {'camera_id': 'f4ed2ca3-1917-44dd-914b-404b1654fd83', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:31555/nvstream/tmp/nv_streamer/videos/Camera_01.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 22:03:10 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '3df1fb25-f6cb-4623-9046-dc3201dfa0fb', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:31556/nvstream/tmp/nv_streamer/videos/Camera_02.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 22:03:10 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '5a935576-b30d-4857-8ff3-9ac9468d2ff9', 'camera_name': 'Camera_03', 'camera_url': 'rtsp://192.168.65.6:31557/nvstream/tmp/nv_streamer/videos/Camera_03.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 22:03:10 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '6b413e63-2d81-4c7b-9248-5941505912f4', 'camera_name': 'Camera', 'camera_url': 'rtsp://192.168.65.6:31554/nvstream/tmp/nv_streamer/videos/Camera.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 22:03:10 [run-workloads] lib.controller - INFO - Reprovision forwarded 4/4 events to stream 'vst.event'
+2026-06-25 22:03:38 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.030876
+2026-06-25 22:03:38 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:03:38] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:04:03 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.027008
+2026-06-25 22:04:03 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:04:03] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:04:28 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.027119
+2026-06-25 22:04:28 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:04:28] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:04:44 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.032937
+2026-06-25 22:04:44 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:04:44] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:05:02 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.038913
+2026-06-25 22:05:02 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:05:02] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:05:28 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.026848
+2026-06-25 22:05:28 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:05:28] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:05:58 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.036473
+2026-06-25 22:05:58 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:05:58] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:06:20 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.026965
+2026-06-25 22:06:20 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:06:20] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:06:45 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.031946
+2026-06-25 22:06:45 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:06:45] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:07:02 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.043936
+2026-06-25 22:07:02 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:07:02] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:07:22 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.029630
+2026-06-25 22:07:22 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:07:22] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:07:42 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.033433
+2026-06-25 22:07:42 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:07:42] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:13:14 [run-workloads] lib.messaging.redisMessaging - INFO - connected to redis 127.0.0.1  port 6379
+2026-06-25 22:13:14 [run-workloads] lib.controller - INFO - pod watcher thread started
+2026-06-25 22:13:14 [run-workloads] lib.controller - INFO - Subscribing to channels: wdm_error_events
+2026-06-25 22:13:14 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: worker restart_on_nonzero=True delay_s=3.0
+2026-06-25 22:13:14 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: worker restart_on_nonzero=True delay_s=3.0
+2026-06-25 22:13:14 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_SERVER=127.0.0.1 (from env)
+2026-06-25 22:13:14 [run-workloads] lib.controller - INFO - Starting Redis pub/sub listener
+2026-06-25 22:13:14 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-25 22:13:14 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-25 22:13:14 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_PORT=6379 (from env)
+2026-06-25 22:13:14 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing': worker subprocess stdout/stderr → /logs/worker-docker-workload-streamprocessing-vss-vios-streamprocessing-4005.log and parent stdout
+2026-06-25 22:13:14 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt': worker subprocess stdout/stderr → /logs/worker-docker-workload-rtvi-cv-mv3dt-vss-rtvi-cv-mv3dt-4004.log and parent stdout
+2026-06-25 22:13:14 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_TARGET_PORT_MAPPING={'default': 5000, 'grpc': 50052} (default is set in config.py, used by app.py)
+2026-06-25 22:13:14 [run-workloads] __main__ - INFO - Started workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005 pid=20
+2026-06-25 22:13:14 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_CONTROLLER_HOST=127.0.0.1 WDM_CONTROLLER_PORT=5003 (WDM_ENVOY_DASHBOARD_PROXY enabled)
+2026-06-25 22:13:14 [run-workloads] __main__ - INFO - Started workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004 pid=22
+2026-06-25 22:13:14 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_XDS_USE_POD_DNS=False WDM_XDS_USE_IP_ADDRESS=True
+2026-06-25 22:13:14 [run-workloads] lib.xDS.envoyxDS - INFO - redis connected
+2026-06-25 22:13:14 [run-workloads] werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.65.3:5003
+2026-06-25 22:13:14 [run-workloads] werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-25 22:13:41 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.064466
+2026-06-25 22:13:41 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:13:41] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:13:56 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.027553
+2026-06-25 22:13:56 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:13:56] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:14:13 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.030481
+2026-06-25 22:14:13 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:14:13] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:14:29 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.027566
+2026-06-25 22:14:29 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:14:29] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:14:57 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.028390
+2026-06-25 22:14:57 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:14:57] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:15:18 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.030255
+2026-06-25 22:15:18 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:15:18] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:15:36 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.031250
+2026-06-25 22:15:36 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:15:36] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:16:03 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.026891
+2026-06-25 22:16:03 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:16:03] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:16:19 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.053706
+2026-06-25 22:16:19 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:16:19] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:16:36 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.035426
+2026-06-25 22:16:36 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:16:36] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:16:56 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.028305
+2026-06-25 22:16:56 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:16:56] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:17:26 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.026966
+2026-06-25 22:17:26 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:17:26] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:17:43 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.026331
+2026-06-25 22:17:43 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:17:43] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:18:04 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.051678
+2026-06-25 22:18:04 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:18:04] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:18:26 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.043869
+2026-06-25 22:18:26 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:18:26] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:18:52 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.031168
+2026-06-25 22:18:52 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:18:52] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:19:17 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.038201
+2026-06-25 22:19:17 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:19:17] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:19:39 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.027604
+2026-06-25 22:19:39 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:19:39] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:20:08 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.062825
+2026-06-25 22:20:08 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:20:08] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:20:33 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.025505
+2026-06-25 22:20:33 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:20:33] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:20:51 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.024978
+2026-06-25 22:20:51 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:20:51] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:21:16 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.037519
+2026-06-25 22:21:16 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:21:16] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:21:45 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.035503
+2026-06-25 22:21:45 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:21:45] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:22:13 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.028195
+2026-06-25 22:22:13 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:22:13] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:22:42 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.034575
+2026-06-25 22:22:42 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:22:42] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:23:09 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.030940
+2026-06-25 22:23:09 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:23:09] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:23:36 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.039093
+2026-06-25 22:23:36 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:23:36] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:24:00 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.034405
+2026-06-25 22:24:00 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:24:00] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:24:21 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.028149
+2026-06-25 22:24:21 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:24:21] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:24:43 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.041046
+2026-06-25 22:24:43 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:24:43] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:25:10 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.031062
+2026-06-25 22:25:10 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:25:10] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:25:29 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.029502
+2026-06-25 22:25:29 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:25:29] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:25:49 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.025569
+2026-06-25 22:25:49 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:25:49] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:26:06 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.029352
+2026-06-25 22:26:06 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:26:06] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:26:24 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.034106
+2026-06-25 22:26:24 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:26:24] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:26:53 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.026867
+2026-06-25 22:26:53 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:26:53] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:27:24 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.032770
+2026-06-25 22:27:24 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:27:24] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:27:43 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.025817
+2026-06-25 22:27:43 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:27:43] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:28:00 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.026702
+2026-06-25 22:28:00 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:28:00] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:28:20 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.028439
+2026-06-25 22:28:20 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:28:20] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:28:36 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.031540
+2026-06-25 22:28:36 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:28:36] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:28:58 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.028224
+2026-06-25 22:28:58 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:28:58] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:29:28 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.029962
+2026-06-25 22:29:28 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:29:28] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:29:51 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.024759
+2026-06-25 22:29:51 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:29:51] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:30:18 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.030411
+2026-06-25 22:30:18 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:30:18] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:30:42 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.024957
+2026-06-25 22:30:42 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:30:42] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:30:59 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.025810
+2026-06-25 22:30:59 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:30:59] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:31:15 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.055623
+2026-06-25 22:31:15 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:31:15] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:31:37 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.028259
+2026-06-25 22:31:37 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:31:37] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:32:01 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.027338
+2026-06-25 22:32:01 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:32:01] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:32:28 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.035885
+2026-06-25 22:32:28 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:32:28] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:32:47 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.030074
+2026-06-25 22:32:47 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:32:47] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:33:09 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.035790
+2026-06-25 22:33:09 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:33:09] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:35:26 [run-workloads] lib.messaging.redisMessaging - INFO - connected to redis 127.0.0.1  port 6379
+2026-06-25 22:35:26 [run-workloads] lib.controller - INFO - pod watcher thread started
+2026-06-25 22:35:26 [run-workloads] lib.controller - INFO - Subscribing to channels: wdm_error_events
+2026-06-25 22:35:26 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: worker restart_on_nonzero=True delay_s=3.0
+2026-06-25 22:35:26 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: worker restart_on_nonzero=True delay_s=3.0
+2026-06-25 22:35:26 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_SERVER=127.0.0.1 (from env)
+2026-06-25 22:35:26 [run-workloads] lib.controller - INFO - Starting Redis pub/sub listener
+2026-06-25 22:35:26 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-25 22:35:26 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-25 22:35:26 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_PORT=6379 (from env)
+2026-06-25 22:35:26 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing': worker subprocess stdout/stderr → /logs/worker-docker-workload-streamprocessing-vss-vios-streamprocessing-4005.log and parent stdout
+2026-06-25 22:35:26 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt': worker subprocess stdout/stderr → /logs/worker-docker-workload-rtvi-cv-mv3dt-vss-rtvi-cv-mv3dt-4004.log and parent stdout
+2026-06-25 22:35:26 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_TARGET_PORT_MAPPING={'default': 5000, 'grpc': 50052} (default is set in config.py, used by app.py)
+2026-06-25 22:35:26 [run-workloads] __main__ - INFO - Started workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005 pid=20
+2026-06-25 22:35:26 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_CONTROLLER_HOST=127.0.0.1 WDM_CONTROLLER_PORT=5003 (WDM_ENVOY_DASHBOARD_PROXY enabled)
+2026-06-25 22:35:26 [run-workloads] __main__ - INFO - Started workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004 pid=22
+2026-06-25 22:35:26 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_XDS_USE_POD_DNS=False WDM_XDS_USE_IP_ADDRESS=True
+2026-06-25 22:35:26 [run-workloads] lib.xDS.envoyxDS - INFO - redis connected
+2026-06-25 22:35:26 [run-workloads] werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.65.3:5003
+2026-06-25 22:35:26 [run-workloads] werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-25 22:35:54 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.064656
+2026-06-25 22:35:54 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:35:54] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:36:14 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.035542
+2026-06-25 22:36:14 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:36:14] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:36:36 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.036701
+2026-06-25 22:36:36 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:36:36] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:37:03 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.031524
+2026-06-25 22:37:03 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:37:03] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:37:30 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.030693
+2026-06-25 22:37:30 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:37:30] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:37:50 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.029334
+2026-06-25 22:37:50 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:37:50] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:38:11 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.029634
+2026-06-25 22:38:11 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:38:11] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:38:30 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.042870
+2026-06-25 22:38:30 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:38:30] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:38:57 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.032330
+2026-06-25 22:38:57 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:38:57] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:39:22 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.059608
+2026-06-25 22:39:22 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:39:22] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:39:51 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.031259
+2026-06-25 22:39:51 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:39:51] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:40:08 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.032293
+2026-06-25 22:40:08 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:40:08] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:40:24 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.026072
+2026-06-25 22:40:24 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:40:24] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:40:49 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.033469
+2026-06-25 22:40:49 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:40:49] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:41:12 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.029132
+2026-06-25 22:41:12 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:41:12] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:41:27 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.031897
+2026-06-25 22:41:27 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:41:27] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:41:55 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.027164
+2026-06-25 22:41:55 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:41:55] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:42:12 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.026744
+2026-06-25 22:42:12 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:42:12] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:42:35 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.030602
+2026-06-25 22:42:35 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:42:35] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:42:52 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.035657
+2026-06-25 22:42:52 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:42:52] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:43:21 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.029633
+2026-06-25 22:43:21 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:43:21] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:43:36 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.025677
+2026-06-25 22:43:36 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:43:36] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:43:55 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.031266
+2026-06-25 22:43:55 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:43:55] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:44:21 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.047348
+2026-06-25 22:44:21 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:44:21] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:44:42 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.030017
+2026-06-25 22:44:42 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:44:42] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:45:00 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.029361
+2026-06-25 22:45:00 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:45:00] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:45:08 [run-workloads] lib.controller - ERROR - Error while consuming pub/sub message
+Traceback (most recent call last):
+  File "lib/messaging/redis_subscriber.py", line 77, in listen
+  File "redis/client.py", line 1679, in get_message
+    response = self.parse_response(block=(timeout is None), timeout=timeout)
+  File "redis/client.py", line 1531, in parse_response
+    response = self._execute(conn, try_read)
+  File "redis/client.py", line 1507, in _execute
+    return conn.retry.call_with_retry(
+  File "redis/retry.py", line 49, in call_with_retry
+    fail(error)
+  File "redis/client.py", line 1509, in <lambda>
+    lambda error: self._disconnect_raise_connect(conn, error),
+  File "redis/client.py", line 1496, in _disconnect_raise_connect
+    raise error
+  File "redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "redis/client.py", line 1508, in <lambda>
+    lambda: command(*args, **kwargs),
+  File "redis/client.py", line 1525, in try_read
+    if not conn.can_read(timeout=timeout):
+  File "redis/connection.py", line 837, in can_read
+    return self._parser.can_read(timeout)
+  File "redis/connection.py", line 330, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "redis/connection.py", line 222, in can_read
+    return bool(self.length) or self._read_from_socket(
+  File "redis/connection.py", line 195, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+2026-06-25 22:45:08 [run-workloads] lib.controller - ERROR - Error while consuming pub/sub message
+Traceback (most recent call last):
+  File "redis/connection.py", line 624, in connect
+    sock = self.retry.call_with_retry(
+  File "redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "redis/connection.py", line 625, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "redis/connection.py", line 690, in _connect
+    raise err
+  File "redis/connection.py", line 678, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "lib/messaging/redis_subscriber.py", line 77, in listen
+  File "redis/client.py", line 1679, in get_message
+    response = self.parse_response(block=(timeout is None), timeout=timeout)
+  File "redis/client.py", line 1531, in parse_response
+    response = self._execute(conn, try_read)
+  File "redis/client.py", line 1507, in _execute
+    return conn.retry.call_with_retry(
+  File "redis/retry.py", line 49, in call_with_retry
+    fail(error)
+  File "redis/client.py", line 1509, in <lambda>
+    lambda error: self._disconnect_raise_connect(conn, error),
+  File "redis/client.py", line 1496, in _disconnect_raise_connect
+    raise error
+  File "redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "redis/client.py", line 1508, in <lambda>
+    lambda: command(*args, **kwargs),
+  File "redis/client.py", line 1525, in try_read
+    if not conn.can_read(timeout=timeout):
+  File "redis/connection.py", line 832, in can_read
+    self.connect()
+  File "redis/connection.py", line 630, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+2026-06-25 22:45:08 [run-workloads] lib.controller - ERROR - Error while consuming pub/sub message
+Traceback (most recent call last):
+  File "redis/connection.py", line 624, in connect
+    sock = self.retry.call_with_retry(
+  File "redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "redis/connection.py", line 625, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "redis/connection.py", line 690, in _connect
+    raise err
+  File "redis/connection.py", line 678, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "lib/messaging/redis_subscriber.py", line 77, in listen
+  File "redis/client.py", line 1679, in get_message
+    response = self.parse_response(block=(timeout is None), timeout=timeout)
+  File "redis/client.py", line 1531, in parse_response
+    response = self._execute(conn, try_read)
+  File "redis/client.py", line 1507, in _execute
+    return conn.retry.call_with_retry(
+  File "redis/retry.py", line 49, in call_with_retry
+    fail(error)
+  File "redis/client.py", line 1509, in <lambda>
+    lambda error: self._disconnect_raise_connect(conn, error),
+  File "redis/client.py", line 1496, in _disconnect_raise_connect
+    raise error
+  File "redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "redis/client.py", line 1508, in <lambda>
+    lambda: command(*args, **kwargs),
+  File "redis/client.py", line 1525, in try_read
+    if not conn.can_read(timeout=timeout):
+  File "redis/connection.py", line 832, in can_read
+    self.connect()
+  File "redis/connection.py", line 630, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+2026-06-25 22:45:08 [run-workloads] lib.controller - ERROR - Error while consuming pub/sub message
+Traceback (most recent call last):
+  File "redis/connection.py", line 624, in connect
+    sock = self.retry.call_with_retry(
+  File "redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "redis/connection.py", line 625, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "redis/connection.py", line 690, in _connect
+    raise err
+  File "redis/connection.py", line 678, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "lib/messaging/redis_subscriber.py", line 77, in listen
+  File "redis/client.py", line 1679, in get_message
+    response = self.parse_response(block=(timeout is None), timeout=timeout)
+  File "redis/client.py", line 1531, in parse_response
+    response = self._execute(conn, try_read)
+  File "redis/client.py", line 1507, in _execute
+    return conn.retry.call_with_retry(
+  File "redis/retry.py", line 49, in call_with_retry
+    fail(error)
+  File "redis/client.py", line 1509, in <lambda>
+    lambda error: self._disconnect_raise_connect(conn, error),
+  File "redis/client.py", line 1496, in _disconnect_raise_connect
+    raise error
+  File "redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "redis/client.py", line 1508, in <lambda>
+    lambda: command(*args, **kwargs),
+  File "redis/client.py", line 1525, in try_read
+    if not conn.can_read(timeout=timeout):
+  File "redis/connection.py", line 832, in can_read
+    self.connect()
+  File "redis/connection.py", line 630, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+2026-06-25 22:48:09 [run-workloads] lib.messaging.redisMessaging - INFO - connected to redis 127.0.0.1  port 6379
+2026-06-25 22:48:09 [run-workloads] lib.controller - INFO - pod watcher thread started
+2026-06-25 22:48:09 [run-workloads] lib.controller - INFO - Subscribing to channels: wdm_error_events
+2026-06-25 22:48:09 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: worker restart_on_nonzero=True delay_s=3.0
+2026-06-25 22:48:09 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: worker restart_on_nonzero=True delay_s=3.0
+2026-06-25 22:48:09 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_SERVER=127.0.0.1 (from env)
+2026-06-25 22:48:09 [run-workloads] lib.controller - INFO - Starting Redis pub/sub listener
+2026-06-25 22:48:09 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-25 22:48:09 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-25 22:48:09 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_PORT=6379 (from env)
+2026-06-25 22:48:09 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing': worker subprocess stdout/stderr → /logs/worker-docker-workload-streamprocessing-vss-vios-streamprocessing-4005.log and parent stdout
+2026-06-25 22:48:09 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt': worker subprocess stdout/stderr → /logs/worker-docker-workload-rtvi-cv-mv3dt-vss-rtvi-cv-mv3dt-4004.log and parent stdout
+2026-06-25 22:48:09 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_TARGET_PORT_MAPPING={'default': 5000, 'grpc': 50052} (default is set in config.py, used by app.py)
+2026-06-25 22:48:09 [run-workloads] __main__ - INFO - Started workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005 pid=20
+2026-06-25 22:48:09 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_CONTROLLER_HOST=127.0.0.1 WDM_CONTROLLER_PORT=5003 (WDM_ENVOY_DASHBOARD_PROXY enabled)
+2026-06-25 22:48:09 [run-workloads] __main__ - INFO - Started workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004 pid=22
+2026-06-25 22:48:09 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_XDS_USE_POD_DNS=False WDM_XDS_USE_IP_ADDRESS=True
+2026-06-25 22:48:09 [run-workloads] lib.xDS.envoyxDS - INFO - redis connected
+2026-06-25 22:48:09 [run-workloads] werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.65.3:5003
+2026-06-25 22:48:09 [run-workloads] werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-25 22:48:34 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.068762
+2026-06-25 22:48:34 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:48:34] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:48:53 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.039853
+2026-06-25 22:48:53 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:48:53] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:49:23 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.030479
+2026-06-25 22:49:23 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:49:23] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:49:43 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.029133
+2026-06-25 22:49:43 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:49:43] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:50:09 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.034776
+2026-06-25 22:50:09 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:50:09] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 22:50:35 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.090957
+2026-06-25 22:50:35 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 22:50:35] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 23:56:26 [run-workloads] lib.messaging.redisMessaging - INFO - connected to redis 127.0.0.1  port 6379
+2026-06-25 23:56:26 [run-workloads] lib.controller - INFO - pod watcher thread started
+2026-06-25 23:56:26 [run-workloads] lib.controller - INFO - Subscribing to channels: wdm_error_events
+2026-06-25 23:56:26 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: worker restart_on_nonzero=True delay_s=3.0
+2026-06-25 23:56:26 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: worker restart_on_nonzero=True delay_s=3.0
+2026-06-25 23:56:26 [run-workloads] lib.controller - INFO - Starting Redis pub/sub listener
+2026-06-25 23:56:26 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-25 23:56:26 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_SERVER=127.0.0.1 (from env)
+2026-06-25 23:56:26 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-25 23:56:26 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing': worker subprocess stdout/stderr → /logs/worker-docker-workload-streamprocessing-vss-vios-streamprocessing-4005.log and parent stdout
+2026-06-25 23:56:26 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_PORT=6379 (from env)
+2026-06-25 23:56:26 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt': worker subprocess stdout/stderr → /logs/worker-docker-workload-rtvi-cv-mv3dt-vss-rtvi-cv-mv3dt-4004.log and parent stdout
+2026-06-25 23:56:26 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_TARGET_PORT_MAPPING={'default': 5000, 'grpc': 50052} (default is set in config.py, used by app.py)
+2026-06-25 23:56:26 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_CONTROLLER_HOST=127.0.0.1 WDM_CONTROLLER_PORT=5003 (WDM_ENVOY_DASHBOARD_PROXY enabled)
+2026-06-25 23:56:26 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_XDS_USE_POD_DNS=False WDM_XDS_USE_IP_ADDRESS=True
+2026-06-25 23:56:26 [run-workloads] __main__ - INFO - Started workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005 pid=20
+2026-06-25 23:56:26 [run-workloads] __main__ - INFO - Started workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004 pid=22
+2026-06-25 23:56:26 [run-workloads] lib.xDS.envoyxDS - INFO - redis connected
+2026-06-25 23:56:26 [run-workloads] werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.65.3:5003
+2026-06-25 23:56:26 [run-workloads] werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-25 23:56:48 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.069215
+2026-06-25 23:56:48 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 23:56:48] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 23:56:55 [run-workloads] lib.controller - INFO - Received reprovision message: {'wlobject': 'vss-vios-streamprocessing', 'podname': 'vss-vios-streamprocessing', 'timestamp': '2026-06-25T23:56:55.970913Z', 'status': 'down', 'ids': ['ea4df723-7cec-4bdf-8bfa-069aae035bf7', '80684c07-98fe-4a22-b176-8a561712c9cc', '9844ec83-42a4-49c6-a2fa-77e3772fd78e', '77e97fa2-7f10-4495-985f-e6f176b36e04', 'fcedcb55-fd74-4846-9ea1-e377a1aba649', '9e4098fb-347a-4177-a802-e09f469fc2bf', '5922bdef-a906-459a-a976-6f79110645f6', '3caf136a-dde7-46d0-9348-20fc5450fb89', '96cedff4-6bd1-4905-9117-f860c4c5b3a4', '7469b089-6f48-468c-9ddc-b038d0c1df18', '37a8b9ed-85f3-45e0-87dd-486502e36afa', '99c27ac8-4c3e-4f6d-9d14-d94cb74575b5', '2df00324-ed07-4b0a-b2ca-3e8c03c918fe', 'b61128c3-ca7e-4999-8f83-df1d8449672c', 'fc21211b-dc32-4da3-bec3-3ceb05a049fc', '9436a923-ecc6-46f2-b2de-9968e2001e8c', '11a7b469-819b-4e75-903d-1b6117a87eb9', '72ee48c2-8d0d-42be-8e95-1900fd9f8150', '741f56e9-a316-46cc-b3b0-ff33e4fb51d7', '116dcd97-5b91-4f8d-825b-488299df6e70', 'fb97ee3f-2421-4439-829b-060d8aed8778', 'e51afe0a-fbec-4105-bd4c-d2714d54b2bb', 'c6db5575-3a1b-42be-8cf6-ffaedfdc4a5a', '03836e9d-ef6b-4b7c-a6df-26bb61922328', '1cdb3b17-2363-44e9-80d3-7c8cd1cebd6a', 'cabbf07f-253e-4e6e-8d50-4fb00528990c', '9203df16-0a4a-4c39-9649-a5741f1e67e1', 'ef8dc1cb-8b02-4c89-9935-d87d12eec7a2', '62caf835-01ca-4525-91ad-d4b26d289a73', '5ce3f13c-0a30-4aa0-bc6e-7b41d3ca2a71', 'd5442c44-a0d2-4ce2-b815-10e22674ef2e', 'f0fa2150-4c97-41cf-b0df-f88950419b4a', '39105ff0-b39f-4561-be9c-363e833044c0', 'e2690969-2273-469c-90cd-5c2e8397a60e', '7dae87be-a80f-40f1-80ac-e1b9291d9703', '422007d1-9d2f-425d-a79f-a8037db0730a', 'b6c789d4-77c3-4308-bc2f-71516fa9cf20', '198f332d-96c9-495c-80d6-7ace6f46c861', '1ea0031c-1e2c-4645-a2db-84fb1483c84d', '721f0388-e2e7-47ca-b124-6ead50938b73', 'bb59c5d5-92f6-4a83-9472-af6e59df2edc', 'b3e6d3ba-c0b1-4377-82a2-613bf0042653', '9fe7043a-8345-47c1-b25b-5c78a981350a', '4eea00a7-280d-44bb-9842-38a6d4dc8cbb', '8000a4aa-2a56-4efe-bef9-e2a9a3ef12cd', '5f3a61b6-e0ae-4925-a4bb-fc84d4cc07e2', 'ceac7265-d388-4812-936e-361c0f295d9b', '3f878d5a-038e-458d-bfce-c99c68049081', '2b918d7f-22b8-4dd8-a634-cbd697a30dc0', '52dc712f-047e-42c6-840b-45dd4d76cab8', '84e7569d-7b96-4627-a2b8-210e71b4df03', '630a664e-fe3e-43f6-869c-dd21e706222e', 'af0d0ffa-16d6-4373-b078-57306569a571', 'c22bbff9-9d64-4b8a-8e27-71272c53fb3c', '6a54f0d8-dc92-4e3a-9c9c-ab8957246e8e', 'cfdbdff4-c62e-4395-9ab2-aa53be2e8903', '6c6f4227-b220-4599-9984-f7db678a2c10', '9b015fda-31e2-4ddf-881b-2198650977b1', '8fee13d8-1e45-49af-82e5-f384e2c1f922', '0d4b0431-b076-43ba-8124-ea6cb4a05241', '3b2798e9-eb2a-4206-a74a-46039e5d2591', '2d2852ca-b3d2-4a90-a70f-56c842802658', '1b3351d0-4657-40d0-bc85-6adef1b752e1', '07425196-1f8b-4461-9d55-073696f8afd1', 'f797b57e-4a2e-4cf9-838a-c8de0d3557c3', 'd4f99efd-943c-4a31-9358-1fc9dbb40b96', '31018a6b-532b-4212-9d86-c8d927411ab4', 'b27d00eb-34de-46c1-9f4b-0b26e66e1200', '11ff114d-796f-4202-94fb-aa1850b5e23e', '6556c1c5-ebd3-40f8-8c85-3c018eceb330', '593ee6d2-5dee-49b3-b4ef-894e5ca4814c', 'bb9d122d-6841-4e49-b297-d5ef2b1e8479', '8beeb0fb-ce65-4e1f-bea3-339dc73423d7', '23f2b05e-91cf-4561-a423-2f60b68f441f', '2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'f0fb8eaa-12ae-4312-8fe9-baab03c82b64', '83e0f9db-5279-49fc-9dd6-2dbe0a34be07', '9cfbf703-280c-4354-95b1-512a5d73c196', '0c562a7d-ac2d-45ef-947a-7b718e09ad66', 'f4ed2ca3-1917-44dd-914b-404b1654fd83', '3df1fb25-f6cb-4623-9046-dc3201dfa0fb', '5a935576-b30d-4857-8ff3-9ac9468d2ff9', '6b413e63-2d81-4c7b-9248-5941505912f4', 'be4d6776-b086-4d7d-afa4-fda156b9d20f', 'dadb10af-1b55-40da-8505-87885534661f', 'a59bc7b0-632b-4253-84f5-49e4c67a7d3f', 'f97675f1-aaf9-4bd6-b20d-5211623b4567', '68d64504-ce4d-4a51-8fa9-e30aca0c1a79', '9d3bb90b-a833-4c0b-ae23-f7a1f384c18d', 'e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'ce5cabcc-4d7c-4e5e-be64-fb85d1b39fbe'], 'type': 'reprovision', 'event_field': 'event', 'msg_key': 'vst.event', 'redis_msg_field': 'sensor.id', 'payload': [{'alert_type': 'camera_status_change', 'created_at': '2026-06-25T23:56:36Z', 'event': {'camera_id': '68d64504-ce4d-4a51-8fa9-e30aca0c1a79', 'camera_name': 'Camera', 'camera_url': 'rtsp://192.168.65.6:31554/nvstream/tmp/nv_streamer/videos/Camera.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T23:56:36Z', 'event': {'camera_id': '9d3bb90b-a833-4c0b-ae23-f7a1f384c18d', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:31555/nvstream/tmp/nv_streamer/videos/Camera_01.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T23:56:36Z', 'event': {'camera_id': 'e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:31556/nvstream/tmp/nv_streamer/videos/Camera_02.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T23:56:36Z', 'event': {'camera_id': 'ce5cabcc-4d7c-4e5e-be64-fb85d1b39fbe', 'camera_name': 'Camera_03', 'camera_url': 'rtsp://192.168.65.6:31557/nvstream/tmp/nv_streamer/videos/Camera_03.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}]}
+2026-06-25 23:56:55 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '68d64504-ce4d-4a51-8fa9-e30aca0c1a79', 'camera_name': 'Camera', 'camera_url': 'rtsp://192.168.65.6:31554/nvstream/tmp/nv_streamer/videos/Camera.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 23:56:55 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '9d3bb90b-a833-4c0b-ae23-f7a1f384c18d', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:31555/nvstream/tmp/nv_streamer/videos/Camera_01.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 23:56:55 [run-workloads] lib.controller - INFO - data_json: {'camera_id': 'e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:31556/nvstream/tmp/nv_streamer/videos/Camera_02.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 23:56:55 [run-workloads] lib.controller - INFO - data_json: {'camera_id': 'ce5cabcc-4d7c-4e5e-be64-fb85d1b39fbe', 'camera_name': 'Camera_03', 'camera_url': 'rtsp://192.168.65.6:31557/nvstream/tmp/nv_streamer/videos/Camera_03.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 23:56:55 [run-workloads] lib.controller - INFO - Reprovision forwarded 4/4 events to stream 'vst.event'
+2026-06-25 23:57:03 [run-workloads] lib.controller - INFO - Received reprovision message: {'wlobject': 'vss-rtvi-cv-mv3dt', 'podname': 'vss-rtvi-cv-mv3dt', 'timestamp': '2026-06-25T23:57:03.461835Z', 'status': 'down', 'ids': ['9844ec83-42a4-49c6-a2fa-77e3772fd78e', '77e97fa2-7f10-4495-985f-e6f176b36e04', 'ea4df723-7cec-4bdf-8bfa-069aae035bf7', '80684c07-98fe-4a22-b176-8a561712c9cc', '9e4098fb-347a-4177-a802-e09f469fc2bf', '5922bdef-a906-459a-a976-6f79110645f6', '3caf136a-dde7-46d0-9348-20fc5450fb89', 'fcedcb55-fd74-4846-9ea1-e377a1aba649', '96cedff4-6bd1-4905-9117-f860c4c5b3a4', '7469b089-6f48-468c-9ddc-b038d0c1df18', '99c27ac8-4c3e-4f6d-9d14-d94cb74575b5', '37a8b9ed-85f3-45e0-87dd-486502e36afa', '2df00324-ed07-4b0a-b2ca-3e8c03c918fe', 'b61128c3-ca7e-4999-8f83-df1d8449672c', 'fc21211b-dc32-4da3-bec3-3ceb05a049fc', '9436a923-ecc6-46f2-b2de-9968e2001e8c', '72ee48c2-8d0d-42be-8e95-1900fd9f8150', '11a7b469-819b-4e75-903d-1b6117a87eb9', '741f56e9-a316-46cc-b3b0-ff33e4fb51d7', '116dcd97-5b91-4f8d-825b-488299df6e70', 'fb97ee3f-2421-4439-829b-060d8aed8778', 'e51afe0a-fbec-4105-bd4c-d2714d54b2bb', 'c6db5575-3a1b-42be-8cf6-ffaedfdc4a5a', '03836e9d-ef6b-4b7c-a6df-26bb61922328', '1cdb3b17-2363-44e9-80d3-7c8cd1cebd6a', 'cabbf07f-253e-4e6e-8d50-4fb00528990c', 'ef8dc1cb-8b02-4c89-9935-d87d12eec7a2', '9203df16-0a4a-4c39-9649-a5741f1e67e1', '62caf835-01ca-4525-91ad-d4b26d289a73', 'f0fa2150-4c97-41cf-b0df-f88950419b4a', 'd5442c44-a0d2-4ce2-b815-10e22674ef2e', '5ce3f13c-0a30-4aa0-bc6e-7b41d3ca2a71', '39105ff0-b39f-4561-be9c-363e833044c0', '422007d1-9d2f-425d-a79f-a8037db0730a', 'e2690969-2273-469c-90cd-5c2e8397a60e', '7dae87be-a80f-40f1-80ac-e1b9291d9703', 'b6c789d4-77c3-4308-bc2f-71516fa9cf20', '198f332d-96c9-495c-80d6-7ace6f46c861', '721f0388-e2e7-47ca-b124-6ead50938b73', 'bb59c5d5-92f6-4a83-9472-af6e59df2edc', '1ea0031c-1e2c-4645-a2db-84fb1483c84d', 'b3e6d3ba-c0b1-4377-82a2-613bf0042653', '9fe7043a-8345-47c1-b25b-5c78a981350a', '4eea00a7-280d-44bb-9842-38a6d4dc8cbb', '8000a4aa-2a56-4efe-bef9-e2a9a3ef12cd', '5f3a61b6-e0ae-4925-a4bb-fc84d4cc07e2', 'ceac7265-d388-4812-936e-361c0f295d9b', '2b918d7f-22b8-4dd8-a634-cbd697a30dc0', '3f878d5a-038e-458d-bfce-c99c68049081', '52dc712f-047e-42c6-840b-45dd4d76cab8', '630a664e-fe3e-43f6-869c-dd21e706222e', '84e7569d-7b96-4627-a2b8-210e71b4df03', 'af0d0ffa-16d6-4373-b078-57306569a571', 'c22bbff9-9d64-4b8a-8e27-71272c53fb3c', 'cfdbdff4-c62e-4395-9ab2-aa53be2e8903', '6c6f4227-b220-4599-9984-f7db678a2c10', '6a54f0d8-dc92-4e3a-9c9c-ab8957246e8e', '8fee13d8-1e45-49af-82e5-f384e2c1f922', '9b015fda-31e2-4ddf-881b-2198650977b1', '0d4b0431-b076-43ba-8124-ea6cb4a05241', '3b2798e9-eb2a-4206-a74a-46039e5d2591'], 'type': 'reprovision', 'event_field': 'event', 'msg_key': 'vst.event', 'redis_msg_field': 'sensor.id', 'payload': [{'alert_type': 'camera_status_change', 'created_at': '2026-06-25T23:56:36Z', 'event': {'camera_id': '68d64504-ce4d-4a51-8fa9-e30aca0c1a79', 'camera_name': 'Camera', 'camera_url': 'rtsp://192.168.65.6:30554/live/68d64504-ce4d-4a51-8fa9-e30aca0c1a79', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/68d64504-ce4d-4a51-8fa9-e30aca0c1a79', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T23:56:36Z', 'event': {'camera_id': '9d3bb90b-a833-4c0b-ae23-f7a1f384c18d', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:30555/live/9d3bb90b-a833-4c0b-ae23-f7a1f384c18d', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/9d3bb90b-a833-4c0b-ae23-f7a1f384c18d', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T23:56:36Z', 'event': {'camera_id': 'e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:30556/live/e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T23:56:36Z', 'event': {'camera_id': 'ce5cabcc-4d7c-4e5e-be64-fb85d1b39fbe', 'camera_name': 'Camera_03', 'camera_url': 'rtsp://192.168.65.6:30557/live/ce5cabcc-4d7c-4e5e-be64-fb85d1b39fbe', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/ce5cabcc-4d7c-4e5e-be64-fb85d1b39fbe', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}, 'source': 'vst'}]}
+2026-06-25 23:57:03 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '68d64504-ce4d-4a51-8fa9-e30aca0c1a79', 'camera_name': 'Camera', 'camera_url': 'rtsp://192.168.65.6:30554/live/68d64504-ce4d-4a51-8fa9-e30aca0c1a79', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/68d64504-ce4d-4a51-8fa9-e30aca0c1a79', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 23:57:03 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '9d3bb90b-a833-4c0b-ae23-f7a1f384c18d', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:30555/live/9d3bb90b-a833-4c0b-ae23-f7a1f384c18d', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/9d3bb90b-a833-4c0b-ae23-f7a1f384c18d', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 23:57:03 [run-workloads] lib.controller - INFO - data_json: {'camera_id': 'e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:30556/live/e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 23:57:03 [run-workloads] lib.controller - INFO - data_json: {'camera_id': 'ce5cabcc-4d7c-4e5e-be64-fb85d1b39fbe', 'camera_name': 'Camera_03', 'camera_url': 'rtsp://192.168.65.6:30557/live/ce5cabcc-4d7c-4e5e-be64-fb85d1b39fbe', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/ce5cabcc-4d7c-4e5e-be64-fb85d1b39fbe', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-25 23:57:03 [run-workloads] lib.controller - INFO - Reprovision forwarded 4/4 events to stream 'vst.event'
+2026-06-25 23:57:17 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.029566
+2026-06-25 23:57:17 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 23:57:17] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 23:57:46 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.049358
+2026-06-25 23:57:46 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 23:57:46] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 23:58:09 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.033453
+2026-06-25 23:58:09 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 23:58:09] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 23:58:34 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.040079
+2026-06-25 23:58:34 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 23:58:34] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 23:58:54 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.025139
+2026-06-25 23:58:54 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 23:58:54] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 23:59:11 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.034199
+2026-06-25 23:59:11 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 23:59:11] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 23:59:29 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.029510
+2026-06-25 23:59:29 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 23:59:29] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-25 23:59:51 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.030477
+2026-06-25 23:59:51 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [25/Jun/2026 23:59:51] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-26 00:00:12 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.034859
+2026-06-26 00:00:12 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [26/Jun/2026 00:00:12] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-26 00:00:38 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.032361
+2026-06-26 00:00:38 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [26/Jun/2026 00:00:38] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-26 00:01:00 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.034864
+2026-06-26 00:01:00 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [26/Jun/2026 00:01:00] "POST /v3/discovery:clusters HTTP/1.1" 200 -
+2026-06-26 00:01:06 [run-workloads] lib.controller - INFO - Received reprovision message: {'wlobject': 'vss-vios-streamprocessing', 'podname': 'vss-vios-streamprocessing', 'timestamp': '2026-06-26T00:01:06.154965Z', 'status': 'down', 'ids': ['ea4df723-7cec-4bdf-8bfa-069aae035bf7', '80684c07-98fe-4a22-b176-8a561712c9cc', '9844ec83-42a4-49c6-a2fa-77e3772fd78e', '77e97fa2-7f10-4495-985f-e6f176b36e04', 'fcedcb55-fd74-4846-9ea1-e377a1aba649', '9e4098fb-347a-4177-a802-e09f469fc2bf', '5922bdef-a906-459a-a976-6f79110645f6', '3caf136a-dde7-46d0-9348-20fc5450fb89', '96cedff4-6bd1-4905-9117-f860c4c5b3a4', '7469b089-6f48-468c-9ddc-b038d0c1df18', '37a8b9ed-85f3-45e0-87dd-486502e36afa', '99c27ac8-4c3e-4f6d-9d14-d94cb74575b5', '2df00324-ed07-4b0a-b2ca-3e8c03c918fe', 'b61128c3-ca7e-4999-8f83-df1d8449672c', 'fc21211b-dc32-4da3-bec3-3ceb05a049fc', '9436a923-ecc6-46f2-b2de-9968e2001e8c', '11a7b469-819b-4e75-903d-1b6117a87eb9', '72ee48c2-8d0d-42be-8e95-1900fd9f8150', '741f56e9-a316-46cc-b3b0-ff33e4fb51d7', '116dcd97-5b91-4f8d-825b-488299df6e70', 'fb97ee3f-2421-4439-829b-060d8aed8778', 'e51afe0a-fbec-4105-bd4c-d2714d54b2bb', 'c6db5575-3a1b-42be-8cf6-ffaedfdc4a5a', '03836e9d-ef6b-4b7c-a6df-26bb61922328', '1cdb3b17-2363-44e9-80d3-7c8cd1cebd6a', 'cabbf07f-253e-4e6e-8d50-4fb00528990c', '9203df16-0a4a-4c39-9649-a5741f1e67e1', 'ef8dc1cb-8b02-4c89-9935-d87d12eec7a2', '62caf835-01ca-4525-91ad-d4b26d289a73', '5ce3f13c-0a30-4aa0-bc6e-7b41d3ca2a71', 'd5442c44-a0d2-4ce2-b815-10e22674ef2e', 'f0fa2150-4c97-41cf-b0df-f88950419b4a', '39105ff0-b39f-4561-be9c-363e833044c0', 'e2690969-2273-469c-90cd-5c2e8397a60e', '7dae87be-a80f-40f1-80ac-e1b9291d9703', '422007d1-9d2f-425d-a79f-a8037db0730a', 'b6c789d4-77c3-4308-bc2f-71516fa9cf20', '198f332d-96c9-495c-80d6-7ace6f46c861', '1ea0031c-1e2c-4645-a2db-84fb1483c84d', '721f0388-e2e7-47ca-b124-6ead50938b73', 'bb59c5d5-92f6-4a83-9472-af6e59df2edc', 'b3e6d3ba-c0b1-4377-82a2-613bf0042653', '9fe7043a-8345-47c1-b25b-5c78a981350a', '4eea00a7-280d-44bb-9842-38a6d4dc8cbb', '8000a4aa-2a56-4efe-bef9-e2a9a3ef12cd', '5f3a61b6-e0ae-4925-a4bb-fc84d4cc07e2', 'ceac7265-d388-4812-936e-361c0f295d9b', '3f878d5a-038e-458d-bfce-c99c68049081', '2b918d7f-22b8-4dd8-a634-cbd697a30dc0', '52dc712f-047e-42c6-840b-45dd4d76cab8', '84e7569d-7b96-4627-a2b8-210e71b4df03', '630a664e-fe3e-43f6-869c-dd21e706222e', 'af0d0ffa-16d6-4373-b078-57306569a571', 'c22bbff9-9d64-4b8a-8e27-71272c53fb3c', '6a54f0d8-dc92-4e3a-9c9c-ab8957246e8e', 'cfdbdff4-c62e-4395-9ab2-aa53be2e8903', '6c6f4227-b220-4599-9984-f7db678a2c10', '9b015fda-31e2-4ddf-881b-2198650977b1', '8fee13d8-1e45-49af-82e5-f384e2c1f922', '0d4b0431-b076-43ba-8124-ea6cb4a05241', '3b2798e9-eb2a-4206-a74a-46039e5d2591', '2d2852ca-b3d2-4a90-a70f-56c842802658', '1b3351d0-4657-40d0-bc85-6adef1b752e1', '07425196-1f8b-4461-9d55-073696f8afd1', 'f797b57e-4a2e-4cf9-838a-c8de0d3557c3', 'd4f99efd-943c-4a31-9358-1fc9dbb40b96', '31018a6b-532b-4212-9d86-c8d927411ab4', 'b27d00eb-34de-46c1-9f4b-0b26e66e1200', '11ff114d-796f-4202-94fb-aa1850b5e23e', '6556c1c5-ebd3-40f8-8c85-3c018eceb330', '593ee6d2-5dee-49b3-b4ef-894e5ca4814c', 'bb9d122d-6841-4e49-b297-d5ef2b1e8479', '8beeb0fb-ce65-4e1f-bea3-339dc73423d7', '23f2b05e-91cf-4561-a423-2f60b68f441f', '2af727df-9ac6-4d08-9d4f-7af770f9e5eb', 'f0fb8eaa-12ae-4312-8fe9-baab03c82b64', '83e0f9db-5279-49fc-9dd6-2dbe0a34be07', '9cfbf703-280c-4354-95b1-512a5d73c196', '0c562a7d-ac2d-45ef-947a-7b718e09ad66', 'f4ed2ca3-1917-44dd-914b-404b1654fd83', '3df1fb25-f6cb-4623-9046-dc3201dfa0fb', '5a935576-b30d-4857-8ff3-9ac9468d2ff9', '6b413e63-2d81-4c7b-9248-5941505912f4', 'be4d6776-b086-4d7d-afa4-fda156b9d20f', 'dadb10af-1b55-40da-8505-87885534661f', 'a59bc7b0-632b-4253-84f5-49e4c67a7d3f', 'f97675f1-aaf9-4bd6-b20d-5211623b4567', '68d64504-ce4d-4a51-8fa9-e30aca0c1a79', '9d3bb90b-a833-4c0b-ae23-f7a1f384c18d', 'e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'ce5cabcc-4d7c-4e5e-be64-fb85d1b39fbe'], 'type': 'reprovision', 'event_field': 'event', 'msg_key': 'vst.event', 'redis_msg_field': 'sensor.id', 'payload': [{'alert_type': 'camera_status_change', 'created_at': '2026-06-25T23:56:26Z', 'event': {'camera_id': '68d64504-ce4d-4a51-8fa9-e30aca0c1a79', 'camera_name': 'Camera', 'camera_url': 'rtsp://192.168.65.6:31554/nvstream/tmp/nv_streamer/videos/Camera.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T23:56:26Z', 'event': {'camera_id': '9d3bb90b-a833-4c0b-ae23-f7a1f384c18d', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:31555/nvstream/tmp/nv_streamer/videos/Camera_01.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T23:56:26Z', 'event': {'camera_id': 'e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:31556/nvstream/tmp/nv_streamer/videos/Camera_02.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}}, {'alert_type': 'camera_status_change', 'created_at': '2026-06-25T23:56:26Z', 'event': {'camera_id': 'ce5cabcc-4d7c-4e5e-be64-fb85d1b39fbe', 'camera_name': 'Camera_03', 'camera_url': 'rtsp://192.168.65.6:31557/nvstream/tmp/nv_streamer/videos/Camera_03.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}}]}
+2026-06-26 00:01:06 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '68d64504-ce4d-4a51-8fa9-e30aca0c1a79', 'camera_name': 'Camera', 'camera_url': 'rtsp://192.168.65.6:31554/nvstream/tmp/nv_streamer/videos/Camera.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-26 00:01:06 [run-workloads] lib.controller - INFO - data_json: {'camera_id': '9d3bb90b-a833-4c0b-ae23-f7a1f384c18d', 'camera_name': 'Camera_01', 'camera_url': 'rtsp://192.168.65.6:31555/nvstream/tmp/nv_streamer/videos/Camera_01.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-26 00:01:06 [run-workloads] lib.controller - INFO - data_json: {'camera_id': 'e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:31556/nvstream/tmp/nv_streamer/videos/Camera_02.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-26 00:01:06 [run-workloads] lib.controller - INFO - data_json: {'camera_id': 'ce5cabcc-4d7c-4e5e-be64-fb85d1b39fbe', 'camera_name': 'Camera_03', 'camera_url': 'rtsp://192.168.65.6:31557/nvstream/tmp/nv_streamer/videos/Camera_03.mp4', 'change': 'camera_proxy', 'metadata': {'codec': 'h264', 'framerate': '', 'resolution': ''}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-26 00:01:06 [run-workloads] lib.controller - INFO - Reprovision forwarded 4/4 events to stream 'vst.event'
+2026-06-26 00:01:06 [run-workloads] lib.controller - ERROR - Error while consuming pub/sub message
+Traceback (most recent call last):
+  File "lib/messaging/redis_subscriber.py", line 77, in listen
+  File "redis/client.py", line 1679, in get_message
+    response = self.parse_response(block=(timeout is None), timeout=timeout)
+  File "redis/client.py", line 1531, in parse_response
+    response = self._execute(conn, try_read)
+  File "redis/client.py", line 1507, in _execute
+    return conn.retry.call_with_retry(
+  File "redis/retry.py", line 49, in call_with_retry
+    fail(error)
+  File "redis/client.py", line 1509, in <lambda>
+    lambda error: self._disconnect_raise_connect(conn, error),
+  File "redis/client.py", line 1496, in _disconnect_raise_connect
+    raise error
+  File "redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "redis/client.py", line 1508, in <lambda>
+    lambda: command(*args, **kwargs),
+  File "redis/client.py", line 1525, in try_read
+    if not conn.can_read(timeout=timeout):
+  File "redis/connection.py", line 837, in can_read
+    return self._parser.can_read(timeout)
+  File "redis/connection.py", line 330, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "redis/connection.py", line 222, in can_read
+    return bool(self.length) or self._read_from_socket(
+  File "redis/connection.py", line 195, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+2026-06-26 05:45:51 [run-workloads] lib.messaging.redisMessaging - INFO - connected to redis 127.0.0.1  port 6379
+2026-06-26 05:45:51 [run-workloads] lib.controller - INFO - pod watcher thread started
+2026-06-26 05:45:51 [run-workloads] lib.controller - INFO - Subscribing to channels: wdm_error_events
+2026-06-26 05:45:51 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: worker restart_on_nonzero=True delay_s=3.0
+2026-06-26 05:45:51 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: worker restart_on_nonzero=True delay_s=3.0
+2026-06-26 05:45:51 [run-workloads] lib.controller - INFO - Starting Redis pub/sub listener
+2026-06-26 05:45:51 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-26 05:45:51 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_SERVER=127.0.0.1 (from env)
+2026-06-26 05:45:51 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004: WDM_APP_WORKER_CMD='(not set; default worker command)' argv=['/sdr']
+2026-06-26 05:45:51 [run-workloads] __main__ - INFO - workload name='docker-workload-streamprocessing': worker subprocess stdout/stderr → /logs/worker-docker-workload-streamprocessing-vss-vios-streamprocessing-4005.log and parent stdout
+2026-06-26 05:45:51 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_WL_REDIS_PORT=6379 (from env)
+2026-06-26 05:45:51 [run-workloads] __main__ - INFO - workload name='docker-workload-rtvi-cv-mv3dt': worker subprocess stdout/stderr → /logs/worker-docker-workload-rtvi-cv-mv3dt-vss-rtvi-cv-mv3dt-4004.log and parent stdout
+2026-06-26 05:45:51 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_TARGET_PORT_MAPPING={'default': 5000, 'grpc': 50052} (default is set in config.py, used by app.py)
+2026-06-26 05:45:51 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_CONTROLLER_HOST=127.0.0.1 WDM_CONTROLLER_PORT=5003 (WDM_ENVOY_DASHBOARD_PROXY enabled)
+2026-06-26 05:45:51 [run-workloads] __main__ - INFO - Started workload name='docker-workload-streamprocessing' wl_obj_name='vss-vios-streamprocessing' port=4005 pid=20
+2026-06-26 05:45:51 [run-workloads] __main__ - INFO - Started workload name='docker-workload-rtvi-cv-mv3dt' wl_obj_name='vss-rtvi-cv-mv3dt' port=4004 pid=22
+2026-06-26 05:45:51 [run-workloads] __main__ - INFO - build_xds_app_config: WDM_XDS_USE_POD_DNS=False WDM_XDS_USE_IP_ADDRESS=True
+2026-06-26 05:45:51 [run-workloads] lib.xDS.envoyxDS - INFO - redis connected
+2026-06-26 05:45:51 [run-workloads] werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5003
+ * Running on http://192.168.65.3:5003
+2026-06-26 05:45:51 [run-workloads] werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-26 05:46:02 [run-workloads] lib.controller - INFO - Received reprovision message: {'wlobject': 'vss-rtvi-cv-mv3dt', 'podname': 'vss-rtvi-cv-mv3dt', 'timestamp': '2026-06-26T05:46:02.468089Z', 'status': 'down', 'ids': ['9844ec83-42a4-49c6-a2fa-77e3772fd78e', '77e97fa2-7f10-4495-985f-e6f176b36e04', 'ea4df723-7cec-4bdf-8bfa-069aae035bf7', '80684c07-98fe-4a22-b176-8a561712c9cc', '9e4098fb-347a-4177-a802-e09f469fc2bf', '5922bdef-a906-459a-a976-6f79110645f6', '3caf136a-dde7-46d0-9348-20fc5450fb89', 'fcedcb55-fd74-4846-9ea1-e377a1aba649', '96cedff4-6bd1-4905-9117-f860c4c5b3a4', '7469b089-6f48-468c-9ddc-b038d0c1df18', '99c27ac8-4c3e-4f6d-9d14-d94cb74575b5', '37a8b9ed-85f3-45e0-87dd-486502e36afa', '2df00324-ed07-4b0a-b2ca-3e8c03c918fe', 'b61128c3-ca7e-4999-8f83-df1d8449672c', 'fc21211b-dc32-4da3-bec3-3ceb05a049fc', '9436a923-ecc6-46f2-b2de-9968e2001e8c', '72ee48c2-8d0d-42be-8e95-1900fd9f8150', '11a7b469-819b-4e75-903d-1b6117a87eb9', '741f56e9-a316-46cc-b3b0-ff33e4fb51d7', '116dcd97-5b91-4f8d-825b-488299df6e70', 'fb97ee3f-2421-4439-829b-060d8aed8778', 'e51afe0a-fbec-4105-bd4c-d2714d54b2bb', 'c6db5575-3a1b-42be-8cf6-ffaedfdc4a5a', '03836e9d-ef6b-4b7c-a6df-26bb61922328', '1cdb3b17-2363-44e9-80d3-7c8cd1cebd6a', 'cabbf07f-253e-4e6e-8d50-4fb00528990c', 'ef8dc1cb-8b02-4c89-9935-d87d12eec7a2', '9203df16-0a4a-4c39-9649-a5741f1e67e1', '62caf835-01ca-4525-91ad-d4b26d289a73', 'f0fa2150-4c97-41cf-b0df-f88950419b4a', 'd5442c44-a0d2-4ce2-b815-10e22674ef2e', '5ce3f13c-0a30-4aa0-bc6e-7b41d3ca2a71', '39105ff0-b39f-4561-be9c-363e833044c0', '422007d1-9d2f-425d-a79f-a8037db0730a', 'e2690969-2273-469c-90cd-5c2e8397a60e', '7dae87be-a80f-40f1-80ac-e1b9291d9703', 'b6c789d4-77c3-4308-bc2f-71516fa9cf20', '198f332d-96c9-495c-80d6-7ace6f46c861', '721f0388-e2e7-47ca-b124-6ead50938b73', 'bb59c5d5-92f6-4a83-9472-af6e59df2edc', '1ea0031c-1e2c-4645-a2db-84fb1483c84d', 'b3e6d3ba-c0b1-4377-82a2-613bf0042653', '9fe7043a-8345-47c1-b25b-5c78a981350a', '4eea00a7-280d-44bb-9842-38a6d4dc8cbb', '8000a4aa-2a56-4efe-bef9-e2a9a3ef12cd', '5f3a61b6-e0ae-4925-a4bb-fc84d4cc07e2', 'ceac7265-d388-4812-936e-361c0f295d9b', '2b918d7f-22b8-4dd8-a634-cbd697a30dc0', '3f878d5a-038e-458d-bfce-c99c68049081', '52dc712f-047e-42c6-840b-45dd4d76cab8', '630a664e-fe3e-43f6-869c-dd21e706222e', '84e7569d-7b96-4627-a2b8-210e71b4df03', 'af0d0ffa-16d6-4373-b078-57306569a571', 'c22bbff9-9d64-4b8a-8e27-71272c53fb3c', 'cfdbdff4-c62e-4395-9ab2-aa53be2e8903', '6c6f4227-b220-4599-9984-f7db678a2c10', '6a54f0d8-dc92-4e3a-9c9c-ab8957246e8e', '8fee13d8-1e45-49af-82e5-f384e2c1f922', '9b015fda-31e2-4ddf-881b-2198650977b1', '0d4b0431-b076-43ba-8124-ea6cb4a05241', '3b2798e9-eb2a-4206-a74a-46039e5d2591'], 'type': 'reprovision', 'event_field': 'event', 'msg_key': 'vst.event', 'redis_msg_field': 'sensor.id', 'payload': [{'alert_type': 'camera_status_change', 'created_at': '2026-06-25T23:56:26Z', 'event': {'camera_id': 'e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:30556/live/e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}}]}
+2026-06-26 05:46:02 [run-workloads] lib.controller - INFO - data_json: {'camera_id': 'e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:30556/live/e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-26 05:46:02 [run-workloads] lib.controller - INFO - Reprovision forwarded 1/1 events to stream 'vst.event'
+2026-06-26 05:46:05 [run-workloads] lib.controller - INFO - Received reprovision message: {'wlobject': 'vss-rtvi-cv-mv3dt', 'podname': 'vss-rtvi-cv-mv3dt', 'timestamp': '2026-06-26T05:46:05.092696Z', 'status': 'down', 'ids': ['9844ec83-42a4-49c6-a2fa-77e3772fd78e', '77e97fa2-7f10-4495-985f-e6f176b36e04', 'ea4df723-7cec-4bdf-8bfa-069aae035bf7', '80684c07-98fe-4a22-b176-8a561712c9cc', '9e4098fb-347a-4177-a802-e09f469fc2bf', '5922bdef-a906-459a-a976-6f79110645f6', '3caf136a-dde7-46d0-9348-20fc5450fb89', 'fcedcb55-fd74-4846-9ea1-e377a1aba649', '96cedff4-6bd1-4905-9117-f860c4c5b3a4', '7469b089-6f48-468c-9ddc-b038d0c1df18', '99c27ac8-4c3e-4f6d-9d14-d94cb74575b5', '37a8b9ed-85f3-45e0-87dd-486502e36afa', '2df00324-ed07-4b0a-b2ca-3e8c03c918fe', 'b61128c3-ca7e-4999-8f83-df1d8449672c', 'fc21211b-dc32-4da3-bec3-3ceb05a049fc', '9436a923-ecc6-46f2-b2de-9968e2001e8c', '72ee48c2-8d0d-42be-8e95-1900fd9f8150', '11a7b469-819b-4e75-903d-1b6117a87eb9', '741f56e9-a316-46cc-b3b0-ff33e4fb51d7', '116dcd97-5b91-4f8d-825b-488299df6e70', 'fb97ee3f-2421-4439-829b-060d8aed8778', 'e51afe0a-fbec-4105-bd4c-d2714d54b2bb', 'c6db5575-3a1b-42be-8cf6-ffaedfdc4a5a', '03836e9d-ef6b-4b7c-a6df-26bb61922328', '1cdb3b17-2363-44e9-80d3-7c8cd1cebd6a', 'cabbf07f-253e-4e6e-8d50-4fb00528990c', 'ef8dc1cb-8b02-4c89-9935-d87d12eec7a2', '9203df16-0a4a-4c39-9649-a5741f1e67e1', '62caf835-01ca-4525-91ad-d4b26d289a73', 'f0fa2150-4c97-41cf-b0df-f88950419b4a', 'd5442c44-a0d2-4ce2-b815-10e22674ef2e', '5ce3f13c-0a30-4aa0-bc6e-7b41d3ca2a71', '39105ff0-b39f-4561-be9c-363e833044c0', '422007d1-9d2f-425d-a79f-a8037db0730a', 'e2690969-2273-469c-90cd-5c2e8397a60e', '7dae87be-a80f-40f1-80ac-e1b9291d9703', 'b6c789d4-77c3-4308-bc2f-71516fa9cf20', '198f332d-96c9-495c-80d6-7ace6f46c861', '721f0388-e2e7-47ca-b124-6ead50938b73', 'bb59c5d5-92f6-4a83-9472-af6e59df2edc', '1ea0031c-1e2c-4645-a2db-84fb1483c84d', 'b3e6d3ba-c0b1-4377-82a2-613bf0042653', '9fe7043a-8345-47c1-b25b-5c78a981350a', '4eea00a7-280d-44bb-9842-38a6d4dc8cbb', '8000a4aa-2a56-4efe-bef9-e2a9a3ef12cd', '5f3a61b6-e0ae-4925-a4bb-fc84d4cc07e2', 'ceac7265-d388-4812-936e-361c0f295d9b', '2b918d7f-22b8-4dd8-a634-cbd697a30dc0', '3f878d5a-038e-458d-bfce-c99c68049081', '52dc712f-047e-42c6-840b-45dd4d76cab8', '630a664e-fe3e-43f6-869c-dd21e706222e', '84e7569d-7b96-4627-a2b8-210e71b4df03', 'af0d0ffa-16d6-4373-b078-57306569a571', 'c22bbff9-9d64-4b8a-8e27-71272c53fb3c', 'cfdbdff4-c62e-4395-9ab2-aa53be2e8903', '6c6f4227-b220-4599-9984-f7db678a2c10', '6a54f0d8-dc92-4e3a-9c9c-ab8957246e8e', '8fee13d8-1e45-49af-82e5-f384e2c1f922', '9b015fda-31e2-4ddf-881b-2198650977b1', '0d4b0431-b076-43ba-8124-ea6cb4a05241', '3b2798e9-eb2a-4206-a74a-46039e5d2591'], 'type': 'reprovision', 'event_field': 'event', 'msg_key': 'vst.event', 'redis_msg_field': 'sensor.id', 'payload': [{'alert_type': 'camera_status_change', 'created_at': '2026-06-26T05:45:51Z', 'event': {'camera_id': 'e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:30556/live/e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}}]}
+2026-06-26 05:46:05 [run-workloads] lib.controller - INFO - data_json: {'camera_id': 'e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'camera_name': 'Camera_02', 'camera_url': 'rtsp://192.168.65.6:30556/live/e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'camera_vod_url': 'rtsp://192.168.65.6:30564/vod/e6c1129c-e3c3-43ce-a756-ef1e8c6b86b2', 'change': 'camera_streaming', 'metadata': {'codec': 'H264'}, 'tags': 'Region-1|bev-sensor-1'}
+2026-06-26 05:46:05 [run-workloads] lib.controller - INFO - Reprovision forwarded 1/1 events to stream 'vst.event'
+2026-06-26 05:46:18 [run-workloads] run_workloads - INFO - http_request POST /v3/discovery:clusters status=200 elapsed_s=0.104569
+2026-06-26 05:46:18 [run-workloads] werkzeug - INFO - 192.168.65.6 - - [26/Jun/2026 05:46:18] "POST /v3/discovery:clusters HTTP/1.1" 200 -

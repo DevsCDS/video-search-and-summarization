@@ -19,3 +19,4 @@ deploy/docker/rag-secret.override.yml
 *.log
 *checkpoint.*
 .orchestrator-artifacts/*
+*.backup_*

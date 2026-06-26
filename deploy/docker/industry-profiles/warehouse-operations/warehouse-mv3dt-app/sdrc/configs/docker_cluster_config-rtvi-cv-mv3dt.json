@@ -1,0 +1,6 @@
+{
+  "vss-rtvi-cv-mv3dt": {
+    "provisioning_address": "127.0.0.1:9000",
+    "process_type": "docker"
+  }
+}
